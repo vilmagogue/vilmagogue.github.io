@@ -16,6 +16,8 @@ footer {
 h1,
 h2 {
 	margin: 0;
+	font: sans serif;
+	
 }
 
 h2, #currentdate {
@@ -42,4 +44,11 @@ label {
 	display: block;
 	margin: 5px;
 }
+
+input,
+button {
+	padding:.5rem;
+		
+}
+
 

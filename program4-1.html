@@ -4,15 +4,15 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width", initial-scale=1>
-    <title>W4 Template</title>
+   <title>JS.Script</title>
     <link rel="stylesheet" href="css/style.css"> <!--external css reference-->
     
-    </head>
+   </head>
 
     <body>
         <header>
             <h1>Week 4: Add Two Numbers</h1>
-            <h2>VILMA M. GOGUE</h2>
+            <h2>Vilma M. Gogue</h2>
         </header>
         <main>
             <h3>Add Two Numbers</h3>
@@ -20,10 +20,25 @@
           <label>Enter Number Two: <input type="text" id="number2"></label>
             <label><button onclick="addNumbers()">Add Numbers</button></label>
             <hr>
-            <p><span id="output"></span></p>
+            <p id="output"></p>
         </main>
         <footer>
-            &copy;2019 &bull; VILMA M. GOGUE  &bull; BYU-Idaho &bull; CIT 160
+            &copy;2020 &bull; Vilma M. Gogue &bull; BYU-Idaho &bull; CIT 160
         </footer>
-    </body>
-    </html>
+
+        <script>
+             
+             function addNumbers() {
+	//INPUT
+	 let number1 = parseFloat(document.getElementById('number1').value);
+	 let number2 = parseFloat(document.getElementById('number2').value);
+	//PROCESSING
+	 let sum = number1 + number2;
+	//OUTPUT
+	 document.getElementById('output').innerHTML = "The sum of " + number1 + " and " + number2 + " equals " + sum + "!";
+}
+</script>                
+      
+   </body>
+   </label>
+
