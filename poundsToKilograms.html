@@ -1,17 +1,33 @@
-    <!DOCTYPE HTML>
-<html lang="en-us">
+<!DOCTYPE html>
+<html lang="en">
+
 <head>
-<meta charset="utf-8">
-<title>Pounds to Kilograms</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Convert Pounds To Kilograms</title>
+	<link rel="stylesheet" href="css/style.css"><!---external CSS reference--->  
+    </head>
 
-
-</head>
-
+     
 <body>
-Pounds <input type="text" id="poundsInput">weight="160.5"<br>  
-Kilograms <output type="text" id="KilogramsOutput">weight="72.8"<br>  
-<button type="button" onclick="kilograms()">kilograms</button>  
-<div id="outputDiv"></div>  
+<header>
+    <h1>Convert Pounds To Kilograms</h1>
+    <h2>Vilma M. Gogue</h2>
+</header>
+<main>
+    <h3>Pounds To Kilograms</h3>
+    
+    <label>Enter Number in Pounds: <input type="text" id="pounds"></label>
+   
+    <label><button onclick="poundsToKilograms()">Kilograms</button></label>
+    <hr>
+    <p>  Output: <span id="output"></span></p>
+</main>
+<footer>
+    &copy; 2020 &bull; Vilma M. Gogue &bull; BYU-Idaho &bull; CIT 160
+</footer>
+<script
+    src="js.script/poundsToKilograms.js">
+</script>
 </body>
-</output>
-
+</html>
