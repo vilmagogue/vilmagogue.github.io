@@ -10,6 +10,6 @@ function poundsToKilograms() {
         
      //Output      
     // Display the converted weight in kilogram.
-        document.getElementById('output').textContent = kilograms.toFixed(1) + " Kilograms";
+        document.getElementById('output').innerHTML = kilograms.toFixed(1) + " Kilograms";
 
 }
