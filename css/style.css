@@ -3,7 +3,7 @@ body {
 }
 header,
 footer {
-	background-color: #000;
+	background-color: #004266;
 	color: #fff;
 	padding: 10px;
 }
@@ -27,7 +27,7 @@ main {
 	border: 1px solid #999;
 	padding: 10px;
 	max-width: 500px;
-	background-color: #abe;
+	background-color:#C19A00;
 	box-shadow: 0 0 30px;
 }
 
@@ -44,7 +44,7 @@ label {
 }
 
 
-input,
+
 button {
 	padding:.5rem;
 		

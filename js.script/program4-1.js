@@ -5,5 +5,5 @@ function addNumbers() {
 	//PROCESSING
 	 let sum = number1 + number2;
 	//OUTPUT
-	 document.getElementById('output').innerHTML = "The sum of " + number1 + " and " + number2 + " equals " + sum + "!";
+	 document.getElementById('output').innerHTML = "The sum of " + number1 + " + " + number2 + " equals " + sum + "!";
 }  
