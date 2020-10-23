@@ -25,7 +25,7 @@ function footwear() {
  
       else {
           
-           shoes = "unknown";
+           shoes = "shoes";
     } 
       }
 				}
