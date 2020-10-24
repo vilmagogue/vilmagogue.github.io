@@ -7,3 +7,4 @@ function addNumbers() {
 	//OUTPUT
 	 document.getElementById('output').innerHTML = "The sum of " + number1 + " + " + number2 + " equals " + sum + "!";
 }  
+
