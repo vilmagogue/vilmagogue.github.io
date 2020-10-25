@@ -4,36 +4,52 @@ function simpleCalculator() {
     let operator = document.getElementById('operators').value;
     let number2 = parseFloat(document.getElementById('number2').value);
     let answer = parseFloat(document.getElementById('myAnswer').value);
-	let answerMath;
-    let message;    
+	
 //apply selection combo box
 //apply switch : operator between two numbers
 //apply if..else conditions/comparisons
-
+let answerMath;
+let message;
 switch (operator){
 
-    case 'add':
+    case '+':
         answerMath == number1 + number2  ;
-   break;
-case  'minus':
-    answerMath == number1 - number2;
-        break;
-case 'multiply':
-    answerMath== number1 * number2 ;
-        break;
-case 'divide':
-    answerMath == number1 / number2;
-        break;
+
+        if (answerMath == 'myAnswer'){
+            message = 'correct!';
+        }
+    else {
+        message = 'incorrect!';
     }
-
-
-    if (number1 + number2 == answer){
+   break;
+case  '-':
+    answerMath == number1 - number2;
+        if (answer == answerMath) {
+            message = 'correct!';
+        }
+        else {
+            message = 'incorrect!';
+        }
+        break;
+case '*':
+    answerMath== number1 * number2 ;
+        if ( answer == answerMath){
+            message = 'correct!';
+        }
+        else {
+            message = 'incorrect!';
+        }
+        break;
+case '/':
+    answerMath == number1 / number2;
+    if (answer == answerMath){
         message = 'correct!';
     }
-            else {
-            message = 'incorrect!';
+    else {
+        message = 'incorrect!';
     }
-   
+       }
+
 //Output
 //Check answer
 

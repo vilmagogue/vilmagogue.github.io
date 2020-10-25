@@ -1,9 +1,6 @@
 body {
 	text-align: center;
 }
-body {
-	text-align: center;
-}
 header,
 footer {
 	background-color: #000;
@@ -46,7 +43,8 @@ label {
 	margin: 5px;
 }
 input,
-button {
+	button {
 	padding: .5rem;
+	text-align:center;
 
 }
