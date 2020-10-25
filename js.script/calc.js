@@ -6,45 +6,51 @@ function calculate() {
     let total = parseFloat(document.getElementById('answer').value);
 	
 //apply selection combo box
-//apply switch operator between two numbers
+//apply switch : operator between two numbers
 
 let total;
 let message;
 switch (operator) {
     case '+':
-        total = parseFloat(number1 + number2);
-        if (total == answer){
-            message = "Correct! Good Job!"
-        } 
-        else {
-            message = "Incorrect! Try again!"
+     number1 + number2===total;
+        if (total === 'answer'){
+            answer===total;
         }
-        break;      
-    case '-':
-        total = parseFloat(number1 - number2);
-        if (total == answer){
-            message = "Correct! Good Job!"
+            else {
+        if (total === number1 + number2){
+            message = "Correct! Good Job!";
         } 
         else {
-            message = "Incorrect! Try again!"
+            message != "Incorrect! Try again!";
+        }
+    }
+        break;  
+
+    case '-':
+        number1 - number2==total;
+        if (total == answer){
+            message = "Correct! Good Job!";
+        } 
+        else {
+            message = "Incorrect! Try again!";
         }
         break;
     case '*':
-        total = parseFloat(number1 * number2);
+        total == parseFloat(number1 * number2);
         if (total == answer){
-            message = "Correct! Good Job!"
+            message = "Correct! Good Job!";
         } 
         else {
-            message = "Incorrect! Try again!"
+            message = "Incorrect! Try again!";
         }
         break;
     case '/':
-        total = parseFloat(number1 / number2);
+        total == parseFloat(number1 / number2);
         if (total == answer){
-            message = "Correct! Good Job!"
+            message = "Correct! Good Job!";
         } 
         else {
-            message = "Incorrect! Try again!"
+            message = "Incorrect! Try again!";
         }
         break;  
         default : 'none'       
@@ -53,6 +59,6 @@ switch (operator) {
 
 //Output:
 //Check answer
-document.getElementById('output').innerHTML = 'The answer is' + message ;
+document.getElementById('output').innerHTML = `The answer is${message}` ;
 }
         
