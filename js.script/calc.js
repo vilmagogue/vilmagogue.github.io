@@ -12,8 +12,8 @@ let answer;
 let message;
 switch (operator) {
     case '+':
-        answer == parseFloat(num1 + num2);
-        if (answer == answer){
+        answer == num1 + num2;
+        if (answer == 'answer'){
             message == "Correct! Good Job!";
         } 
         else {
@@ -23,8 +23,8 @@ switch (operator) {
         break;  
     
     case '-':
-        answer == parseFloat(num1 - num2);
-        if (answer == answer){
+        answer == num1 - num2;
+        if (answer == 'answer'){
             message == "Correct! Good Job!";
         } 
         else {
@@ -33,7 +33,7 @@ switch (operator) {
         break;
         
     case '*':
-        answer == parseFloat(num1 * num2);
+        answer == num1 * num2;
         if (answer == answer){
             message == "Correct! Good Job!";
         } 
@@ -42,7 +42,7 @@ switch (operator) {
         }
         break;
     case '/':
-        answer == parseFloat(num1/ num2);
+        answer == num1/ num2;
         if (answer == answer){
             message == "Correct! Good Job!";
         } 
