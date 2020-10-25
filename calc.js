@@ -15,14 +15,15 @@ switch (operator){
     case '+':
         answerMath == number1 + number2  ;
 
-        if (answerMath == 'myAnswer'){
+        if (answer == answerMath){
             message = 'correct!';
         }
     else {
         message = 'incorrect!';
     }
    break;
-case  '-':
+
+case  'minus':
     answerMath == number1 - number2;
         if (answer == answerMath) {
             message = 'correct!';

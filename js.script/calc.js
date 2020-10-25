@@ -27,11 +27,11 @@ case 'divide':
     }
 
 
-    if (number1 + number2 == answer){
-        message = 'correct!';
+    if (answer== number1+number2){
+        message = 'It is 🏆 🏆correct!';
     }
             else {
-            message = 'incorrect!';
+            message = 'It is 😥 incorrect! Try Again!';
     }
    
 //Output
