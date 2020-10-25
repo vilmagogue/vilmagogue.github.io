@@ -1,61 +1,50 @@
 function calculate() {
     //input
-    let num1 = parseFloat(document.getElementById('number1').value); 
+    let x = parseFloat(document.getElementById('number1').value); 
     let operator = document.getElementById(operator).value;
-    let num2 = parseFloat(document.getElementById('number2').value);
-    let answer = parseFloat(document.getElementById('answer').value);
+    let y = parseFloat(document.getElementById('number2').value);
+    let total = parseFloat(document.getElementById('answer').value);
 	
 //apply selection combo box
 //apply switch : operator between two numbers
 
-let answer;
-let message;
+let total;
+
 switch (operator) {
+  
     case '+':
-        answer == num1 + num2;
-        if (answer == 'answer'){
-            message == "Correct! Good Job!";
-        } 
-        else {
-            message !== "Incorrect! Try again!";
-        }
-    
+ total== parseFloat(x + y);
+       
         break;  
     
     case '-':
-        answer == num1 - num2;
-        if (answer == 'answer'){
-            message == "Correct! Good Job!";
-        } 
-        else {
-            message !== "Incorrect! Try again!";
-        }
+total == parseFloat(x - y);
+       
         break;
         
     case '*':
-        answer == num1 * num2;
-        if (answer == answer){
-            message == "Correct! Good Job!";
-        } 
-        else {
-            message !== "Incorrect! Try again!";
-        }
+    total ==  parseFloat(x * y);
+        
         break;
     case '/':
-        answer == num1/ num2;
-        if (answer == answer){
-            message == "Correct! Good Job!";
-        } 
-        else {
-            message !== "Incorrect! Try again!";
-        }
+total == parseFloat(x / y);
+       
         break;  
         default : 'none'       
 }
+let message;
+if (total == answer) {
+    message = "Correct! Good Job";
+} 
+else {
+    message = "Incorrect! Try again";
+}
 
+//Output
 
-//Output:
 //Check answer
+
+
 document.getElementById('output').innerHTML = message ;
 }
         
