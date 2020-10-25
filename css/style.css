@@ -1,9 +1,12 @@
 body {
 	text-align: center;
 }
+body {
+	text-align: center;
+}
 header,
 footer {
-	background-color: #004266;
+	background-color: #000;
 	color: #fff;
 	padding: 10px;
 }
@@ -27,7 +30,7 @@ main {
 	border: 1px solid #999;
 	padding: 10px;
 	max-width: 500px;
-	background-color :#20b2aa;
+	background-color: #abe;
 	box-shadow: 0 0 30px;
 }
 
@@ -42,12 +45,8 @@ label {
 	display: block;
 	margin: 5px;
 }
-
-
 input,
 button {
-	padding:.5rem;
-		
-
+	padding: .5rem;
 
 }
