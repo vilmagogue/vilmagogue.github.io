@@ -1,5 +1,6 @@
 function sleepInOrNot() {
 //input  
+let message =document.getElementByIdlementById('inputDateDay').value;
 let now = new Date();
 let month = now.getMonth();
 let dayOfMonth = now.getDate();
@@ -18,32 +19,32 @@ let dayOfWeek = now.getDay();
                 message = '30 days';
         }
         else if (dayOfMonth =='31 days' || dayOfMonth =='30 days'){
-
+                message = 'number of days';
         }
         else{
 
          ( month == 'February(1)');
-                 message ='28 days'
+             message ='28 days'
         }
        
        
         if ( dayOfWeek =='Monday (1)' || dayOfWeek == 'Tuesday (2)' || dayOfWeek == 'Wednesday (3)' || dayOfWeek == 'Thursday (4)'  || 
         dayOfWeek == 'Friday (5)' || dayOfWeek == 'Saturday (6)' || dayOfWeek == 'Sunday(7)') {
-       message= 'Weekdays'; 
+             message= 'Weekdays'; 
 }
 
 
         else{
 
-        if (dayOfWeek == 'Friday (5)' || dayOfWeek == 'Thursday (4)' || dayOfWeek == 'Wednesday(3)' || dayOfWeek == 'Tuesday (2)'  || dayOfWeek == 'Monday (1)' )  { 
-     message = "Get Up!";
+        if (now == 'Friday (5)' || now == 'Thursday (4)' || now== 'Wednesday(3)' || now == 'Tuesday (2)'  || now == 'Monday (1)' )  { 
+              message = "Get Up!";
 }
 
          else{
-             (dayOfMonth =='Jan 1' && 'July 4' && 'December 25' || dayOfWeek =='Saturday(6)' && 'Sunday(7)')
-   message = 'Sleep in';
+             (now =='Jan 1 (0)' && now =='July 4 (6)' && now =='December 25 (11)' || now =='Saturday(6)' && now =='Sunday(7)')
+             message = 'Sleep in';
    }    
-}
+}   
     //output
 //get the right message :sleepin || get up
 document.getElementById('output').innerHTML = message ;
