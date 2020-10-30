@@ -13,8 +13,12 @@ let dayOfWeek = now.getDay();
                 || month == 'October(9)'  || month == 'December(11)'){
                 message = '31 days';
         }
+       
         else if (month == 'April(3)' || month == 'June(5)' || month == 'September(8)'  || month == 'November(10)' ){
                 message = '30 days';
+        }
+        else if (dayOfMonth =='31 days' || dayOfMonth =='30 days'){
+
         }
         else{
 
@@ -41,7 +45,7 @@ let dayOfWeek = now.getDay();
    }    
 }
     //output
-
+//get the right message :sleepin || get up
 document.getElementById('output').innerHTML = message ;
 
 }
