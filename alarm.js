@@ -1,7 +1,7 @@
-function sleepInOrNot() {
+function myAlarm() {
 //input 
 // all input from computer's clock 
-let message = alarm;
+
 let now = new Date();
 let month = now.getMonth();
 let dayOfMonth = now.getDate();
@@ -10,7 +10,7 @@ let dayOfWeek = now.getDay();
     //&& - And Operator - Both sides to be true
     //|| - OR Operator - One side needs to be true (choices given and one side could be false)
     
-
+let message;
         if (month == 'January(0)' || month == 'March(2)'   || month == 'May(4)'  || month == 'July(6)' ||  month == 'August(7)'  
                 || month == 'October(9)'  || month == 'December(11)'){
                 message = '31 days';
