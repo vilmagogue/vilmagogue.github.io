@@ -29,25 +29,26 @@ else{
 message ='28 days'
 }
        
-        if ( dayOfWeek =='Monday (1)' || dayOfWeek == 'Tuesday (2)' || dayOfWeek == 'Wednesday (3)' || dayOfWeek == 'Thursday (4)'  || 
+if ( dayOfWeek =='Monday (1)' || dayOfWeek == 'Tuesday (2)' || dayOfWeek == 'Wednesday (3)' || dayOfWeek == 'Thursday (4)'  || 
         dayOfWeek == 'Friday (5)' || dayOfWeek == 'Saturday (6)' || dayOfWeek == 'Sunday (0)') {
-             message= 'Weekdays'; 
+             message= 'days of the week'; 
 }
+else if (dayOfWeek == '(1)' && dayOweek == '(2)' && dayOfWeek =='(3)' && dayOfWeek =='(4)' && dayOfWeek == 
+        '(5)' && dayOfWeek =='(6)' && dayOfWeek == '(0)'){
+                message = 'days of the week';
+        }
 
-        if (now == '31' && month == '(9)' && dayOfWeek == '(6)'|| now == '(1)'  && month == '(10)' && dayOfWeek == '(0)')  { 
+else  if (now == '31' && month == '(9)' && dayOfWeek == '(6)'|| now == '(1)'  && month == '(10)' && dayOfWeek == '(0)')  { 
               message = 'Sleep in!';
         }
-        else {
-                if ( now == '1' && month =='(0)' && dayOfWeek == '(4)' || now == '4' && month == '(6)'&& dayOfWeek == '(0)' 
+ else  if ( now == '1' && month =='(0)' && dayOfWeek == '(4)' || now == '4' && month == '(6)'&& dayOfWeek == '(0)' 
                 && now == '25' && month == '(11)'&& dayOfWeek == '(6)'){
                 
                  message = 'sleepin!';
-      
         }
 
-        else{
-
-         now =='2' && month == '(10)' && dayOfWeek == '(1)'|| now == '3' && month == '(10)'&& dayOfWeek == '(2)'|| now == '4' && month =='(10' && dayOfWeek == '(3)'
+else{
+          now =='2' && month == '(10)' && dayOfWeek == '(1)'|| now == '3' && month == '(10)'&& dayOfWeek == '(2)'|| now == '4' && month =='(10' && dayOfWeek == '(3)'
                 ||now == '5' && month == '(10)' && dayOfWeek == '(4)' || now =="6" && month == '(10)' && dayOfWeek == '(5)';
 
                 
