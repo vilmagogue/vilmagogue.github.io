@@ -11,23 +11,23 @@ let dayOfWeek = now.getDay();
     //|| - OR Operator - One side needs to be true (choices given and one side could be false)
     
 let message;
-        if (month == 'January(0)' || month == 'March(2)'   || month == 'May(4)'  || month == 'July(6)' ||  month == 'August(7)'  
-                || month == 'October(9)'  || month == 'December(11)'){
-                message = '31 days';
-        }
        
-        else if (month == 'April(3)' || month == 'June(5)' || month == 'September(8)'  || month == 'November(10)' ){
-                message = '30 days';
-        }
-        else if (dayOfMonth =='31 days' || dayOfMonth =='30 days'){
-                message = 'number of days';
-        }
-        else{
+if (month == 'January(0)' || month == 'March(2)'   || month == 'May(4)'  || month == 'July(6)' ||  month == 'August(7)'  
+|| month == 'October(9)'  || month == 'December(11)'){
+message = '31 days';
+}
 
-         ( month == 'February(1)');
-             message ='28 days'
-        }
-       
+else if (month == 'April(3)' || month == 'June(5)' || month == 'September(8)'  || month == 'November(10)' ){
+message = '30 days';
+}
+else if (dayOfMonth =='31 days' || dayOfMonth =='30 days'){
+message = 'number of days';
+}
+else{
+
+( month == 'February(1)');
+message ='28 days'
+}
        
         if ( dayOfWeek =='Monday (1)' || dayOfWeek == 'Tuesday (2)' || dayOfWeek == 'Wednesday (3)' || dayOfWeek == 'Thursday (4)'  || 
         dayOfWeek == 'Friday (5)' || dayOfWeek == 'Saturday (6)' || dayOfWeek == 'Sunday (0)') {
