@@ -1,6 +1,7 @@
 function sleepInOrNot() {
-//input  
-let message =document.getElementByIdlementById('inputDateDay').value;
+//input 
+// all input from computer's clock 
+let message = alarm;
 let now = new Date();
 let month = now.getMonth();
 let dayOfMonth = now.getDate();
@@ -29,26 +30,37 @@ let dayOfWeek = now.getDay();
        
        
         if ( dayOfWeek =='Monday (1)' || dayOfWeek == 'Tuesday (2)' || dayOfWeek == 'Wednesday (3)' || dayOfWeek == 'Thursday (4)'  || 
-        dayOfWeek == 'Friday (5)' || dayOfWeek == 'Saturday (6)' || dayOfWeek == 'Sunday(7)') {
+        dayOfWeek == 'Friday (5)' || dayOfWeek == 'Saturday (6)' || dayOfWeek == 'Sunday (0)') {
              message= 'Weekdays'; 
 }
 
+        if (now == '31' && month == '(9)' && dayOfWeek == '(6)'|| now == '(1)'  && month == '(10)' && dayOfWeek == '(0)')  { 
+              message = 'Sleep in!';
+        }
+        else {
+                if ( now == '1' && month =='(0)' && dayOfWeek == '(4)' || now == '4' && month == '(6)'&& dayOfWeek == '(0)' 
+                && now == '25' && month == '(11)'&& dayOfWeek == '(6)'){
+                
+                 message = 'sleepin!';
+      
+        }
 
         else{
 
-        if (now == 'Friday (5)' || now == 'Thursday (4)' || now== 'Wednesday(3)' || now == 'Tuesday (2)'  || now == 'Monday (1)' )  { 
-              message = "Get Up!";
-}
+         now =='2' && month == '(10)' && dayOfWeek == '(1)'|| now == '3' && month == '(10)'&& dayOfWeek == '(2)'|| now == '4' && month =='(10' && dayOfWeek == '(3)'
+                ||now == '5' && month == '(10)' && dayOfWeek == '(4)' || now =="6" && month == '(10)' && dayOfWeek == '(5)';
 
-         else{
-             (now =='Jan 1 (0)' && now =='July 4 (6)' && now =='December 25 (11)' || now =='Saturday(6)' && now =='Sunday(7)')
-             message = 'Sleep in';
-   }    
-}   
+                
+                message = 'Get Up!';
+}
+}     
+        
+
     //output
 //get the right message :sleepin || get up
 document.getElementById('output').innerHTML = message ;
 
 }
+
 
 
