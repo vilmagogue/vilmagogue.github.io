@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Loops</title>
+    <link rel="stylesheet" href="css/style.css"> <!--external css reference-->
+            
+    </head>
+    
+<body>
+    <header>
+        <h1>Loops</h1>
+    </header>
+    <main>
+        <h3>Click the button to get the message:</h3>
+        
+       <label><button type="button" onclick="runFunctions()">Add Number</button></label>
+                
+                   <p id="output"></p>
+                    
+                
+                <hr>   
+              
+    </main>
+    <footer>
+        &copy; 2020 &bull; Vilma M. Gogue &bull; BYU-Idaho &bull; CIT 160
+    </footer>
+    <script>
+        function runFunctions() {
+    //run my variable
+        
+        let message ="";
+        
+        let i = 0, limit = 5;
+        while (i < 5) {
+            message += "🍐 ${1} <br>" ;
+         i += 2;
+}
+    
+        document.getElementById('output').innerHTML = message;
+    }
+
+    </script>
+
+</body>
+</html>

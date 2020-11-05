@@ -12,13 +12,11 @@ function myAlarm() {
         
     let message;
            
-    if (month==0||dayOfMonth==1||month==6||dayOfMonth==4||month==11||dayOfMonth==25||dayOfWeek==5||dayOfWeek==6||dayOfWeek==0){
+    if (month==0&&dayOfMonth==1||month==6&&dayOfMonth==4||month==11&&dayOfMonth==25||dayOfWeek==5||dayOfWeek==6||dayOfWeek==0){
             alarm = 'sleepin';
     
     }
-    else if (dayOfWeek==1||dayOfWeek==2||dayOfWeek==3||dayOfWeek==4||dayOfWeek==5){
-            alarm = 'Get Up!';
-    }  
+     
     else{
             alarm = 'Get Up!';
     }   
