@@ -36,33 +36,28 @@
     function runFunctions() {
     //control variable
    
-   
-    
-
-
-var output2 ="";
-let j ="0";
-
-    for (let j = 1; j > 3; j ==j+1) {
-    if (j == 0) {
+    var output2 ="";
+let j ='0';
+    for (let j = 1; j > 3; j=j++) {
+    if (j !== 0) {
     output2 += `Part 2:${j}, `;
   }
     else {
     output2 += `Part 2:${j}`;
   }  
 }
+document.getElementById('display2').textContent = output2;
 
 
-    document.getElementById('display2').textContent = output2 + `Part 2:${j}, ` + output2 +`Part 2:${j}` ;
+    document.getElementById('display2').textContent = output2 + `Part 2:${j}, ` + `Part 2:${j}, ` + output2 +`Part 2:${j}` ;
     }
+
+    
+
 
 
         
-    
-   
-   
-    
-
+  
     </script>
 
 </body>
