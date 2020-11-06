@@ -12,18 +12,18 @@ function myAlarm() {
         
     let message;
            
-    if (month==0&&dayOfMonth==1||month==6&&dayOfMonth==4||month==11&&dayOfMonth==25||dayOfWeek==5||dayOfWeek==6||dayOfWeek==0){
-            alarm = 'sleepin';
+    if (month==0||dayOfMonth==1||month==6||dayOfMonth==4||month==11||dayOfMonth==25||dayOfWeek==5||dayOfWeek==6||dayOfWeek==0){
+            message = 'sleepin';
     
     }
      
     else{
-            alarm = 'Get Up!';
+            message= 'Get Up!';
     }   
             
     
         //output
     //get the right message :sleepin || get up
-    document.getElementById('output').innerHTML = message + 'Get Up'  + '!' ;
+    document.getElementById('output').innerHTML = 'Get Up'  + '!' ;
     
     }
