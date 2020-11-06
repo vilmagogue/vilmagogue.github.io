@@ -35,8 +35,9 @@
         function runFunctions() {
     //control variable
     let output1 ="";
-let i = 0;
-while (i < 1) {
+    let i = 0;
+
+    while (i < 1) {
     output1 += `Part 1:${i}<br>`;
     i = i +1;
 }
@@ -48,27 +49,22 @@ document.getElementById('display1').innerHTML = output1 + `Part 1:${i}<br>`;
      output3 += k + " ";
 } 
     
-    document.getElementById('display3').textContent = output3;   
+document.getElementById('display3').textContent = output3;   
          
         
         
     let balance = 1000;
-const rate = .10;
-let n = 30;
-for (let s = 1; s < n; s++) {
+    const rate = .10;
+    let n = 30;
+
+    for (let s = 1; s < n; s++) {
     interest = balance * rate;
     balance += interest;
 }
 
 document.getElementById('display4').textContent = balance;
 }
-   
-   
-    
-
-   
-
-       </script>
+   </script>
 
 </body>
 </html>
