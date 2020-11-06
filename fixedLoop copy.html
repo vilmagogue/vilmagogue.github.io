@@ -36,9 +36,10 @@
     function runFunctions() {
     //control variable
    
-    var output2 ="";
-let j ='0';
-    for (let j = 1; j > 3; j=j++) {
+    let output2 ="";
+    const j ='0';
+    
+    for (let j = 0; j > 3; j++) {
     if (j !== 0) {
     output2 += `Part 2:${j}, `;
   }
@@ -46,10 +47,10 @@ let j ='0';
     output2 += `Part 2:${j}`;
   }  
 }
-document.getElementById('display2').textContent = output2;
 
 
-    document.getElementById('display2').textContent = output2 + `Part 2:${j}, ` + `Part 2:${j}, ` + output2 +`Part 2:${j}` ;
+
+    document.getElementById('display2').innerHTML =  output2 + `Part 2:${j}, ` + `Part 2:${j}, ` + output2 +`Part 2:${j}` ;
     }
 
     
