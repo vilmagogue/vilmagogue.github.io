@@ -24,6 +24,6 @@ function myAlarm() {
     
         //output
     //get the right message :sleepin || get up
-    document.getElementById('output').innerHTML = message + 'Get Up' + '+' + alarm + '+' + 'sleepin' + '+' + '!' ;
+    document.getElementById('output').innerHTML = message + 'Get Up'  + '!' ;
     
     }
