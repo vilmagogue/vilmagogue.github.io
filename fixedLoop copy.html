@@ -36,36 +36,33 @@
     function runFunctions() {
     //control variable
    
-    let output1 ="";
-let i = 0;
-while (i < 1) {
-    output1 += `Part 1:${i}<br>`;
-    i = i +1;
-}
-document.getElementById('display1').innerHTML = output1 + `Part 1:${i}<br>`;
-
+   
     
-let output3;
-for (let k = 0, k < 4, k++) {
-  output3 += k + " ";
+
+
+var output2 ="";
+let j ="0";
+
+    for (let j = 1; j > 3; j ==j+1) {
+    if (j == 0) {
+    output2 += `Part 2:${j}, `;
+  }
+    else {
+    output2 += `Part 2:${j}`;
+  }  
 }
 
 
+    document.getElementById('display2').textContent = output2 + `Part 2:${j}, ` + output2 +`Part 2:${j}` ;
+    }
 
-let balance = 1000;
-const rate = .10;
-let n = 30;
-for (let s = 0; s < n; s++)
-    interest = balance * rate;
-    balance += interest;
-}
+
         
     
-    document.getElementById('display1').innerHTML = output1;
    
-    document.getElementById('display3').textContent = output3;
-document.getElementById('display4').textContent = balance;
-    }
+   
+    
+
     </script>
 
 </body>
