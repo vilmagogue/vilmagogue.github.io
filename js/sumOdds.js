@@ -1,12 +1,15 @@
-function sumOdds() {
+function runFunctions() {
     //run my variable
-    let n = document.getElementById('addValue').valaue;
+   
     let message =""; 
-    
+    let sum = '0';
  
-    for ( i = 10 ; i <= n  ; i++){
-        if ( i % 2 !=0){
+    for ( i = 0 ; i < 10  ; i++){
+    let n = parseFloat(prompt(document.getElementById('enterNumber')).valaue); 
+        if ( n==0){
+            break;
         }  
+        sum += n;
     }
-    document.getElementById('output').textContent = message + '${n}';
+    document.getElementById('output').textContent = message + '🍊 ${n}<br>';
     } 
