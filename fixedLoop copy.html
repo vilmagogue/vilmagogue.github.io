@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Loops</title>
+    <link rel="stylesheet" href="css/style.css"> <!--external css reference-->
+            
+    </head>
+    
+<body>
+    <header>
+        <h1>Loops</h1>
+    </header>
+    <main>
+        <h3>Click the button to get the message:</h3>
+        
+       <label><button type="button" onclick="runFunctions()">Add Number</button></label>
+                
+                <div class ="mygrid">
+                    
+                  
+                   <p id ="output1"></p>
+                   <p id ="output2"></p>
+                   <p id ="output3"></p>
+                   <p id ="balance"></p>
+                <hr>   
+              </div>
+    </main>
+    <footer>
+        &copy; 2020 &bull; Vilma M. Gogue &bull; BYU-Idaho &bull; CIT 160
+    </footer>
+    <script>
+   
+    function runFunctions() {
+    //control variable
+   
+    let output1 ="";
+let i = 0;
+while (i < 1) {
+    output1 += `Part 1:${i}<br>`;
+    i = i +1;
+}
+document.getElementById('display1').innerHTML = output1 + `Part 1:${i}<br>`;
+
+    
+let output3;
+for (let k = 0, k < 4, k++) {
+  output3 += k + " ";
+}
+
+
+
+let balance = 1000;
+const rate = .10;
+let n = 30;
+for (let s = 0; s < n; s++)
+    interest = balance * rate;
+    balance += interest;
+}
+        
+    
+    document.getElementById('display1').innerHTML = output1;
+   
+    document.getElementById('display3').textContent = output3;
+document.getElementById('display4').textContent = balance;
+    }
+    </script>
+
+</body>
+</html>

@@ -1,12 +1,12 @@
 function sumOdds() {
-    //run my variable 
-        let n = "11";
-        let message ="";
-        
-        for ( let i = 10; n > 25  ; i = i + 10){
-            if (i % 2 !==10);
-        message += "🍐 ${1} <br>" ;
-        }
+    //run my variable
+    let n = document.getElementById('addValue').valaue;
+    let message =""; 
     
-        document.getElementById('output').innerHTML = message;
+ 
+    for ( i = 10 ; i <= n  ; i++){
+        if ( i % 2 !=0){
+        }  
     }
+    document.getElementById('output').textContent = message + '${n}';
+    } 

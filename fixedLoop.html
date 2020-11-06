@@ -18,27 +18,30 @@
         
        <label><button type="button" onclick="runFunctions()">Add Number</button></label>
                 
-                   <p id="output"></p>
+                <div class ="mygrid">
                     
-                
-                <hr>   
-              
+                  
+                   <p id ="display1"></p>
+                   <p id ="display2"></p>
+                   <p id ="display3"></p>
+                   <p id ="display4"></p>
+                  
+              </div>
     </main>
     <footer>
         &copy; 2020 &bull; Vilma M. Gogue &bull; BYU-Idaho &bull; CIT 160
     </footer>
     <script>
         function runFunctions() {
-    //run my variable
-        
-        let message ="";
-        
-        for ( let i = 4; i <= 12  ; i--){
-            message += "🍐 ${1} <br>" ;
-        
+    //control variable
+    let output1 ="";
+let i = 0;
+while (i < 1) {
+    output1 += `Part 1:${i}<br>`;
+    i = i +1;
+}
+document.getElementById('display1').innerHTML = output1 + `Part 1:${i}<br>`;
         }
-        document.getElementById('output').innerHTML = message;
-    }
 
     </script>
 
