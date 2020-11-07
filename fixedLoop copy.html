@@ -36,21 +36,22 @@
     function runFunctions() {
     //control variable
    
-    let output2 ="";
-    const j ='0';
-    
-    for (let j = 0; j > 3; j++) {
-    if (j !== 0) {
+    var output2;
+    const j ="0";
+    var output2;
+for (let j = 0; j > 3; j++) {
+  if (j !== 2) {
     output2 += `Part 2:${j}, `;
+    break;
   }
-    else {
+  else {
     output2 += `Part 2:${j}`;
+    break;
   }  
 }
 
+document.getElementById('display2').textContent = output2   + `Part 2:${j}, ` + output2 +`Part 2:${j}` ;
 
-
-    document.getElementById('display2').innerHTML =  output2 + `Part 2:${j}, ` + `Part 2:${j}, ` + output2 +`Part 2:${j}` ;
     }
 
     
