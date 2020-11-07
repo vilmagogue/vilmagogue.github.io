@@ -21,10 +21,9 @@
                 <div class ="mygrid">
                     
                   
-                   <p id ="output1"></p>
-                   <p id ="output2"></p>
-                   <p id ="output3"></p>
-                   <p id ="balance"></p>
+                  
+                   <p id ="display2"></p>
+                  
                 <hr>   
               </div>
     </main>
@@ -36,20 +35,20 @@
     function runFunctions() {
     //control variable
    
-    var output2;
-    const j =0;
+    let j =0;
     var output2 ="";
 
     for (let j = 0; j < 3; j++) {
-    if (j !== 2) {
+    if (j == 2) {
     output2 += `Part 2:${j}, `;
      }
      else {
     output2 += `Part 2:${j}`;
-     }  
-    }
+  }  
+}
+    
 
-document.getElementById('display2').textContent = output2 + `Part 2:${j}, ` + output2 +`Part 2:${j}` ;
+document.getElementById('display2').textContent =  output2 ;
 
     }
     </script>
