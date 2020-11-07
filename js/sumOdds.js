@@ -8,7 +8,7 @@ function runFunction() {
     let n = document.getElementById('upperValue').valaue; 
    var total = 0;
  
-    for ( var i = 1 ; i < 11 ; i = i +4){
+    for ( var i = 1 ; i <= 11 ; i = i +2){
  
 
        total = total + i;
