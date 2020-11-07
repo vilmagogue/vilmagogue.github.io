@@ -1,19 +1,18 @@
 function runFunction() {
     //control variable
     //determine initializer or the strting point
-    //st conditions when the the loops end
+    //set conditions on how or when the loops end
     // loops incrementer and discrementer
+    // var total as a collector
 
     let n = document.getElementById('upperValue').valaue; 
-    let sum = '0';
+   var total = '0';
  
-    for ( i = 1 ; i < n  ; i++){
+    for ( var i = 1 ; i < 10 ; i = i +=2){
+    if ( i % 2 !==0){
+       total = total + i;
+        } 
+    }
+    document.getElementById('output').textContent = 'The total sum is: ' + total;
     
-       output2 += output2 + i == i + 5;
-            break;
-        }  
-     
-    
-    document.getElementById('output').textContent = 'The total sum is: ' + sum;
-    } 
-   
+}
