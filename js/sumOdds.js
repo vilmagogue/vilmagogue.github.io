@@ -15,6 +15,6 @@ function runFunction() {
        
         } 
     
-    document.getElementById('output').textContent = 'The total sum is :' + total + '!';
+    document.getElementById('output').textContent = 'The total sum is: ' + total + '!';
     
     }
