@@ -2,7 +2,7 @@ function runFunction() {
     //control variable
     //determine initializer or the starting point
     //set conditions on how or when the loops end
-    // loops incrementer and discrementer
+    // loops incrementer
     // var total as a collector
 
     let n = document.getElementById('upperValue').value; 
