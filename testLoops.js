@@ -5,14 +5,13 @@ function runFunction() {
     // loops incrementer and discrementer
     // var total as a collector
 
-    let n = document.getElementById('upperValue').value; 
+    let n = document.getElementById('upperValue').valaue; 
    var total = 0;
  
-    for ( var i = 1 ; i <= n ; i = i+2){
+    for ( var i = 1 ; i <= n ; i = i +2){
  
 
        total = total + i;
-       
         } 
     
     document.getElementById('output').textContent = 'The total sum is :' + total + '!';
