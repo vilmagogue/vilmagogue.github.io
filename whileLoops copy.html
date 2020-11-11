@@ -15,8 +15,8 @@
     </header>
     <main>
         <h3>Click the button to get the message:</h3>
-        
-       <label><button type="button" onclick="runFunctions()">Add Number</button></label>
+        <label><input type="text" id="integer" ></label> 
+       <label><button type="button" onclick="runFunction()">Skip</button></label>
                 
                    <p id="output"></p>
                     
@@ -28,21 +28,20 @@
         &copy; 2020 &bull; Vilma M. Gogue &bull; BYU-Idaho &bull; CIT 160
     </footer>
     <script>
-        function runFunctions() {
-    //run my variable
+        function runFunction() {
+    // control variable
         
-        let message ="";
-        
-        let i = 0, limit = 5;
-        while (i < 5) {
-            message += "🍐 ${1} <br>" ;
-         i += 2;
-}
-    
-        document.getElementById('output').innerHTML = message;
-    }
+    var output = "";
 
+    var skip = parseInt(document.getElementById('integer').value);
+    var i = 100;
+    while (i >= 0) {
+        output -= i + "<br>";
+        i -= skip;
+    }
+    document.getElementById('output').innerHTML =  output  + "100<br>" + '!';
+}
     </script>
 
-</body>
-</html>
+</b<br>
+</br> 

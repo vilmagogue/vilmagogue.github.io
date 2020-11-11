@@ -12,7 +12,7 @@ function myAlarm() {
         
     let message;
            
-    if (month==0||dayOfMonth==1||month==6||dayOfMonth==4||month==11||dayOfMonth==25||dayOfWeek==5||dayOfWeek==6||dayOfWeek==0){
+    if (month==0&&dayOfMonth==1||month==6&&dayOfMonth==21||month==11&&dayOfMonth==25||dayOfWeek==5||dayOfWeek==6||dayOfWeek==0){
             message = 'sleepin';
     
     }
@@ -24,6 +24,6 @@ function myAlarm() {
     
         //output
     //get the right message :sleepin || get up
-    document.getElementById('output').innerHTML = 'Get Up'  + '!' ;
+    document.getElementById('output').innerHTML = message + '!' ;
     
     }
