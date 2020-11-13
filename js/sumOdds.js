@@ -10,7 +10,6 @@ function runFunction() {
  
     for ( var i = 1 ; i <= n ; i = i+2){
  
-
        total = total + i;
        
         } 

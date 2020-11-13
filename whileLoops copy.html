@@ -12,11 +12,12 @@
 <body>
     <header>
         <h1>Loops</h1>
+        <h2>Vilma M. Gogue</h2>
     </header>
     <main>
         <h3>Click the button to get the message:</h3>
-        <label><input type="text" id="integer" ></label> 
-       <label><button type="button" onclick="runFunction()">Skip</button></label>
+        <html><input type="text" id="integer" ></label> 
+       <label><button type="button" onclick="countDown()">Click Me</button></label>
                 
                    <p id="output"></p>
                     
@@ -27,21 +28,21 @@
     <footer>
         &copy; 2020 &bull; Vilma M. Gogue &bull; BYU-Idaho &bull; CIT 160
     </footer>
-    <script>
-        function runFunction() {
-    // control variable
-        
-    var output = "";
-
+ 
+      <script>
+          function countDown() {
+    
     var skip = parseInt(document.getElementById('integer').value);
+    var output = "";
     var i = 100;
     while (i >= 0) {
-        output -= i + "<br>";
+        output += i + "<br>";
         i -= skip;
     }
-    document.getElementById('output').innerHTML =  output  + "100<br>" + '!';
+    document.getElementById('output').innerHTML = output;
 }
-    </script>
-
-</b<br>
-</br> 
+  
+      </script>
+      
+</body>
+</html>
