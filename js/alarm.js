@@ -12,7 +12,7 @@ function myAlarm() {
         
     let message;
            
-    if (month==0&&dayOfMonth==1||month==6&&dayOfMonth==21||month==11&&dayOfMonth==25||dayOfWeek==6||dayOfWeek==0){
+    if (month==0&&dayOfMonth==1||month==6&&dayOfMonth==4||month==11&&dayOfMonth==25||dayOfWeek==6||dayOfWeek==0){
             message = 'sleepin';
     
     }
