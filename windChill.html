@@ -11,38 +11,30 @@
     
 <body>
     <header>
-        <h1>Loops</h1>
+        <h1>Temperature</h1>
+        <h2>Vilma M. Gogue</h2>
     </header>
     <main>
-        <h3>Click the button to get the message:</h3>
-        
-       <label><button type="button" onclick="runFunctions()">Add Number</button></label>
+        <div id="temperature" input type ="text"> </div>
+            
+        <div id="windSpeed" input type ="text"> </div>
+            
+         <label><button type="button" onclick="doInputOutput()">Wind Chill</button></label>
                 
                    <p id="output"></p>
                     
                 
                 <hr>   
-              
+                          
+      
     </main>
     <footer>
         &copy; 2020 &bull; Vilma M. Gogue &bull; BYU-Idaho &bull; CIT 160
     </footer>
-    <script>
-        function runFunctions() {
-    //run my variable
-     let message="";   
-    let x = 2, y = 6, z = 5;
-let result = (x < 3 && y == 6);
-if ( x == 2 || y == 6 || z == 5){
-
-
-    }
     
-        document.getElementById('output').innerHTML = message;
-    }
-
-    </script>
+<script src="js/windChill.js">
+    
+</script>
 
 </body>
 </html>
-
