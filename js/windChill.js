@@ -7,15 +7,15 @@ function doInputOutput() {
     let windSpeed = parseInt(document.getElementById('windSpeed').value);
 document.getElementById('output').innerHTML = windChill (tempF, windSpeed)  ;
 }
- // take a temperature in Fahrenheit as a parameter (t)
- // take a wind speed in miles per hour as a parameter (s)
  
  function windChill ( tempF, windSpeed){
-  // calculate the wind chill factor as a temperature in Fahrenheit  
+     // take a temperature in Fahrenheit as a parameter (tempF)
+ // take a wind speed in miles per hour as a parameter (windSpeed)
   
+ //Processing: calculate the wind chill factor as a temperature in Fahrenheit  
   
   f = 35.74 + (0.6215 * tempF)- (35.75 * windSpeed ** 0.16) + (0.4275 * tempF * windSpeed ** 0.16);
- // call the function (windChill)
+ 
  // return the wind chill factor in Fahrenheit
 
      return f;
