@@ -5,7 +5,8 @@ function doInputOutput() {
     
     let tempF = parseInt(document.getElementById('temperature').value);
     let windSpeed = parseInt(document.getElementById('windSpeed').value);
-document.getElementById('output').innerHTML = windChill (tempF, windSpeed)  ;
+document.getElementById('output').innerHTML = windChill  (tempF, windSpeed);
+
 }
  
  function windChill ( tempF, windSpeed){
