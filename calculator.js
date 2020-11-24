@@ -18,12 +18,7 @@ case '+':
 case  '-':
     calculate = number1 - number2;
         break;
-case '*':
-    calculate = number1 * number2 ;
-        break;
-case '/':
-    calculate = number1 / number2;
-        break;
+
     }
 
 let message;
