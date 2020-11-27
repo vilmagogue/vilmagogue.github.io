@@ -5,7 +5,7 @@ function doFV () {
     let ppy= parseFloat(document.getElementById('periodPerYear').value);
 
     document.getElementById('output').innerHTML = "The future value is " + computeFutureValue (principal, rate, numYears, ppy ) 
-     + " for 10 years " + "!";
+     + "!";
 }
 function computeFutureValue( a, r, n, y ) {
 
