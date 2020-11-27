@@ -1,9 +1,9 @@
 function doPayment ( ){
     let principal = parseFloat(document.getElementById('principal').value);
     let intRate = parseFloat(document.getElementById('annualRate').value);
-    let ppp = parseFloat(document.getElementById('periodsPerYear').value);
+    let ppy = parseFloat(document.getElementById('periodsPerYear').value);
     let yRs = parseFloat (document.getElementById("years").value); 
-    document.getElementById("output1").innerHTML = computePayment (principal, intRate, ppp, yRs);
+    document.getElementById("output1").innerHTML = computePayment (principal, intRate, ppy, yRs);
 }
 
 function computePayment(a, r, n) {
@@ -19,9 +19,12 @@ function computePayment(a, r, n) {
 }
 
 function doBalance () {
-    let numPMT = parseFloat(document.getElementById('numberPayments').value);
-
-    document.getElementById('output2').innerHTML = computeBalance (numPMT);
+    let principal = parseFloat(document.getElementById('principal').value);
+    let intRate = parseFloat(document.getElementById('annualRate').value);
+    let ppy = parseFloat(document.getElementById('periodsPerYear').value);
+    let yRs = parseFloat (document.getElementById("years").value); 
+    let numPMT = parseFloat(document.getElementById("numberOfPMTpaidToDate")) 
+    document.getElementById('output2').innerHTML = computeBalance (principal, intRate, yRs, ppy, numberOfPaymentPaidToDate);
 }
 
 function computeBalance (a, r, d, p,) {
