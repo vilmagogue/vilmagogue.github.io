@@ -3,7 +3,7 @@ function doPayment ( ){
     let intRate = parseFloat(document.getElementById('annualRate').value);
     let ppp = parseFloat(document.getElementById('periodsPerYear').value);
     let yRs = parseFloat (document.getElementById("years").value); 
-    document.getElementById("output").innerHTML = computePayment (principal, intRate, ppp, yRs);
+    document.getElementById("output1").innerHTML = computePayment (principal, intRate, ppp, yRs);
 }
 
 function computePayment(a, r, n) {
@@ -21,7 +21,7 @@ function computePayment(a, r, n) {
 function doBalance () {
     let numPMT = parseFloat(document.getElementById('numberPayments').value);
 
-    document.getElementById('output').innerHTML = computeBalance (numPMT);
+    document.getElementById('output2').innerHTML = computeBalance (numPMT);
 }
 
 function computeBalance (a, r, d, p,) {
