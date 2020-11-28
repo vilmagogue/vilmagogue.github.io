@@ -6,13 +6,13 @@ function doPayment ( ){
     document.getElementById("output1").innerHTML = computePayment (principal, intRate, ppy, yRs);
 }
 
-function computePayment(a, r, n) {
+function computePayment(a, r, n, yRs) {
      
     // Formula to compute payment: p = ar/1-(1+r)^-n;
-    //Where p = is the payment per period, a = is the loan amount, r = is the interest rate per period, 
-    // and n = is the total number of periods throughout the life of the loan.
+    //Where p = is the payment per period, p = is the loan amount, r = is the interest rate per period, 
+    // t = number of years and n = is the total number of periods per year.
 
-    p = a *  r / (1  - ( 1 + r ) ** (-n));
+    p = a * (r/n) * [(1 + r/n ) ** n * (yRs)] / [(1 + r/n) ** n*yRs - 1];
     
    //ComputePayment function computes and returns the monthly payment for a loan with a fixed annual interest rate.
     return p;
