@@ -10,10 +10,9 @@ function computePayment(a, r, n, yRs) {
      
     // Formula to compute payment: p = ar/1-(1+r)^-n;
     //Where p = is the payment per period, a = is the loan amount, r = is the interest rate per period, 
-    // t = number of years and n = is the total number of periods per year.
-
-    p = a * (r/n) * [(1 + r/n ) ** n * (yRs)] / [(1 + r/n) ** n*yRs - 1];
-    
+    // yRs = number of years and n = is the total number of periods per year.
+    p = a * (r/n) / (1 - ((1 + (r/n))**(-n*yRs)));
+   
    //ComputePayment function computes and returns the monthly payment for a loan with a fixed annual interest rate.
     return p;
 }
@@ -23,7 +22,7 @@ function doBalance () {
     let intRate = parseFloat(document.getElementById('annualRate').value);
     let ppy = parseFloat(document.getElementById('periodsPerYear').value);
     let yRs = parseFloat (document.getElementById("years").value); 
-    let numPMT = parseFloat(document.getElementById("numberOfPMTpaidToDate")) 
+    let numPMT = parseFloat(document.getElementById("paymentPerPeriod")) 
     document.getElementById('output2').innerHTML = computeBalance (principal, intRate, yRs, ppy, numPMT);
 }
 
@@ -32,14 +31,14 @@ function computeBalance (a, r, d, p,) {
 //Formula to compute balance payment: b = a ( 1 + r )^d - p((1 + r )^d - 1 / r)
 //Where b = is the balance or payoff amount, a = is the loan amount, r = is the interest rate per period,
  // p = is the payment per period, and d = is the number of payments paid to date.
- 
-b = (a * (( 1 + r )) ** d) - (p * (( 1 + r ) ** d - 1)) / r;
+b = (a * (1 + (r/n))**d) - (p (( 1 + (r/12))**d - 1)) / (r/12);
+
 //The computeBalance function computes and returns the balance for a loan with a fixed annual interest rate. 
+
 
 return b;
 
 }
-
 
 
 
