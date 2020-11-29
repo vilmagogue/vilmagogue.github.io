@@ -24,7 +24,7 @@ function doBalance () {
     let yRs = parseFloat (document.getElementById("years").value); 
     let numPMT = parseFloat(document.getElementById("paymentPerPeriod").value); 
     
-    document.getElementById('output2').innerHTML = computeBalance (principal, intRate, ppy, yRs, numPMT);
+    document.getElementById('output2').innerHTML = computeBalance (principal, intRate, ppy, yRs, p, numPMT);
 }
 
 function computeBalance (a, r, n, d, y) {
