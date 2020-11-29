@@ -24,15 +24,15 @@ function doBalance () {
     let yRs = parseFloat (document.getElementById("years").value); 
     let numPMT = parseFloat(document.getElementById("paymentPerPeriod").value); 
     
-    document.getElementById('output2').innerHTML = computeBalance (principal, intRate, ppy, yRs, p, numPMT);
+    document.getElementById('output2').innerHTML = computeBalance (principal, intRate, ppy, yRs, numPMT);
 }
 
 function computeBalance (a, r, n, d, y) {
 //Compute the balance of a loan after the payments have been made
 //Formula to compute balance payment: b = a ( 1 + r )^d - p((1 + r )^d - 1 / r)
 //Where b = is the balance or payoff amount, a = is the loan amount, r = is the interest rate per period,
- //n= periodPerYear, y = Years, d = is the number of payments paid to date.
- //payment per period formula is applied : a * (r/n) / (1 - ((1 + (r/n))**(-n*y)))
+ //d = is the number of payments paid to date.
+ //payment per period (numPMT) formula is applied : a * (r/n) / (1 - ((1 + (r/n))**(-n*y)))
 
  b = (a * (1 + (r/n))**d) - a * (r/n) / (1 - ((1 + (r/n))**(-n*y))) * (( 1 + (r/n))**d - 1) / (r/n);
 
