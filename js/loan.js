@@ -31,10 +31,10 @@ function computeBalance (a, r, n, d, y) {
 //Compute the balance of a loan after the payments have been made
 //Formula to compute balance payment: b = a ( 1 + r )^d - p((1 + r )^d - 1 / r)
 //Where b = is the balance or payoff amount, a = is the loan amount, r = is the interest rate per period,
- // 12 = is the period per period, and d = is the number of payments paid to date.
+ // d = is the number of payments paid to date.
  //payment per period formula is applied : a * (r/n) / (1 - ((1 + (r/n))**(-n*y)))
 
- b = (a * (1 + (r/d))**y) - a * (r/n) / (1 - ((1 + (r/n))**(-n*y))) * (( 1 + (r/d))**y - 1) / (r/d);
+ b = (a * (1 + (r/n))**d) - a * (r/n) / (1 - ((1 + (r/n))**(-n*y))) * (( 1 + (r/n))**d - 1) / (r/n);
 
 //The computeBalance function computes and returns the balance for a loan with a fixed annual interest rate. 
 
