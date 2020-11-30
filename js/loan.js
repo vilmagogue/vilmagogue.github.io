@@ -29,7 +29,7 @@ function doBalance () {
 
 function computeBalance (a, r, n, y, d) {
 //Compute the balance of a loan after the payments have been made
-//Formula to compute balance payment: b = a ( 1 + r )^d - p((1 + r )^d - 1 / r)
+//Formula to compute balance payment: b = a ( 1 + r )^d - p((1 + r )^d - 1) / r
 //Where b = is the balance or payoff amount, a = is the loan amount, r = is the interest rate per period,
  //d = is the number of payments paid to date.
  //payment per period (numPMT) formula is applied : a * (r/n) / (1 - ((1 + (r/n))**(-n*y)))
