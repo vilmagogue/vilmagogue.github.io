@@ -35,7 +35,7 @@ function computeBalance (a, r, n, y, d) {
  //payment per period (numPMT) formula is applied : a * (r/n) / (1 - ((1 + (r/n))**(-n*y)))
 
  
- b = a * (1 + r)**d - a * (r/n) / (1 - ((1 + (r/n))**(-n*y))) * (( 1 + r)**d - 1) / r;
+ b = a * (1 + r/n)**d - a * (r/n) / (1 - ((1 + (r/n))**(-n*y))) * (( 1 + r/n)**d - 1) / r/n;
 //The computeBalance function computes and returns the balance for a loan with a fixed annual interest rate. 
 
 

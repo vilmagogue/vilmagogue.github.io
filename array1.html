@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Test Array</title>
+    <link rel="stylesheet" href="css/style.css"> <!--external css reference-->
+            
+    </head>
+    
+<body>
+    <header>
+        <h1>Test Array</h1>
+        <h2>Vilma M. Gogue</h2>
+    </header>
+    <main>
+        
+   
+         <label><button type="button" onclick="test()">Test Array</button></label>
+                
+                   <p id="output"></p>
+                    
+                
+                <hr>   
+                          
+      
+    </main>
+    <footer>
+        &copy; 2020 &bull; Vilma M. Gogue &bull; BYU-Idaho &bull; CIT 160
+    </footer>
+    
+<script>
+  
+      /* Defining Table
+ * Input: no user input
+ * Processing: Test the addEnds and getMiddle functions by calling them.
+ * Output: The values returned from the addEnds and getMiddle functions.
+ */
+ function test() {
+    let list1 = [ 17, 8, 9, 5, 20 ];
+    let list2 = [ 12, 4, 8, 15, 17, 5, 20, 11 ];
+    
+     // Test the addEnds function by calling it two times.
+    let sum1 = addEnds(17, 8, 9, 5, 20);
+    let sum2 = addEnds(12, 4, 8, 15, 17, 5, 20, 11);
+     
+    // Test the getMiddle function by calling it two times.
+    let mid1 = getMiddle(list1);
+    let mid2 = getMiddle(list2);
+
+    // Build a string to display to the user.
+    // Display the output string for the user to see.
+    let output =
+            sum1 + '<br>' +
+            sum2 + '<br>' +
+            mid1 + '<br>' +
+            mid2;
+    document.getElementById('output').innerHTML = output;
+   
+  
+  function addEnds(list) {
+    let list1 = [ 17, 8, 9, 5, 20 ];
+    var sum1 = addEnds(list);
+  for ( let i = 0; i < list1.length; 1++) {
+      i++;
+   return list1[0] + list1[list.length -1];
+  }
+    let list2 = [ 12, 4, 8, 15, 17, 5, 20, 11 ];
+    var sum2 = addEnds(list);
+  for ( let i = 0; i < list2.length; 1++) {
+   
+    return list [0] + list2[list.length-1];
+  }
+}
+  
+function getMiddle(list) {
+    var list2 = [ 12, 4, 8, 15, 17, 5, 20, 11 ];
+    var value = getMiddle(list);
+
+    if (list.length / 2 === 0){
+      return (list[list.length/2] + list [list.length/ 2 -1] /2);
+
+    }
+  
+    else 
+    {
+      return list [math.pow (list.length /2)];
+
+    }
+
+  }
+ }
+
+ 
+
+  
+</script>
+    
+ </body>
+ </html>      
+ 
