@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Test Array</title>
+    <link rel="stylesheet" href="css/style.css"> <!--external css reference-->
+            
+    </head>
+    
+<body>
+    <header>
+        <h1>Test Array</h1>
+        <h2>Vilma M. Gogue</h2>
+    </header>
+    <main>
+        
+   
+         <label><button type="button" onclick="test()">Test Array</button></label>
+                
+                   <p id="output"></p>
+                    
+                
+                <hr>   
+                          
+      
+    </main>
+    <footer>
+        &copy; 2020 &bull; Vilma M. Gogue &bull; BYU-Idaho &bull; CIT 160
+    </footer>
+    
+<script>
+  
+  /* Defining Table
+ * Input: no user input
+ * Processing: Test the countEvens and multiply functions by calling them.
+ * Output: The values returned from the countEvens and multiply functions.
+ */
+function test() {
+    let list1 = [ 17, 8, 9, 5, 20 ];
+    let list2 = [ 12, 4, 8, 15, 17, 5, 20, 11 ];
+
+    // Test the countEvens function by calling it two times.
+    let count1 = countEvens(list1);
+    let count2 = countEvens(list2);
+
+    // Test the multiply function by calling it two times.
+    let mult1 = multiply(list1);
+    let mult2 = multiply(list2);
+
+    // Build a string to display to the user.
+    let output =
+           'Even integer is ' + count1 + '<br>' +
+            'Even integer is ' + count2 + '<br>' +
+            mult1 + '<br>' +
+            mult2;
+
+    // Display the output string for the user to see.
+    document.getElementById('output').innerHTML = output;
+
+            function countEvens(list){
+               for ( let i =0; i < list.length-1; i++){
+                 if (list[i]%2 ==0){
+                     count++;
+                 }
+                }
+                return count;
+                }
+            } 
+                         
+                    
+               function multiply(list, multiplier)
+                     var list = [ 17, 8, 9, 5, 20 ];
+                            var products = multiply(list, 3);     
+                 for ( let i =0; i < list.length; i++){
+                     output +="${list[i] * 3";
+                 }           
+                            
+                       
+            
+        
+    
+</script>
+    
+ </body>
+ </html>      
