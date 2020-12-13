@@ -6,7 +6,7 @@
 </head>
 <body>
   
-  <button type="button" onclick="test()">Array</button>
+  <button type="button" onclick="test()">Click</button>
   <div id="output"></div>
 
   <script>
@@ -37,23 +37,27 @@ function test() {
     // Display the output string for the user to see.
     document.getElementById('output').innerHTML = output;
 }
-function countEvens(list) { 
-    for (let i = 0; i < list.length-1; i++){  
-        count = countEvens(list);
+function countEvens(list){
 
-    }
+let count = 0;
+let i = 0;
+for (let count = 0; i < list.length; i++){
+  if ((list[i]%2) ==0){
+    return count;
+  }
 }
- 
+}
 
 function multiply(list, multiplier){
 
        for ( let i = 0; i < list.lenght; i++){
-          if (( list[i]) * multiplier)  {
-            return mult; 
-       }
-    }
+          let mult = list[i] * multiplier;  
+            mult.push(); 
+       
+    
+return products;
+  }
 }
-
 </script>
 
 

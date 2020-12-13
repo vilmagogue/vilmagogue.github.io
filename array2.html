@@ -47,41 +47,47 @@ function test() {
 
     // Test the multiply function by calling it two times.
     let mult1 = multiply(list1, 3);
-    let mult2 = multiply(list2, 4);
+    let mult2 = multiply(list2, 4); 
 
     // Build a string to display to the user.
     let output =
     'Parameters : [17, 8, 9, 5, 20] is '  + count1 + '<br>' +
     'Parameters : [ 12, 4, 8, 15, 17, 5, 20, 11] is ' + count2 + '<br>' +
-    'Parameters '   +  mult1 + '<br>' +
-            mult2;
+    'The products result in mult1 is '   +  mult1 + '<br>' +
+    'The products result in mult2 is '   +     mult2;
 
     // Display the output string for the user to see.
     document.getElementById('output').innerHTML = output;
 }
 
-function countEvens(list) { 
-    for (let i = 0; i < list.length-1; i++){  
-        count = countEvens;
+function countEvens(list){
+
+let count = 0;
+let i = 0;
+while (i < list.length) {
+    if (list[i]%2==0){
+        count ++;
     }
-    if (list.length-1 % 2 == 1){
-    count = ((list.length-1) /2 + " is countEvens");
+    i++
+    
 }
-    else{
-       count = ((list .length-1) /2 + " is ooddNumber")
-    }
-    }
- 
-    function multiply(list, multiplier){
-       for ( let i = 0; i < list.lenght; i++){
-           mult = multiply(list).length * multiplier;
-       }
+return count;
+}
+function multiply(list, multiplier){
+let mult = [];
+for (let i = 0; i < list.length; i++) {
+    let mult = list[i] * multiplier;
+    mult.push();
     
-           return list.join();
-       }
-      
+}
+
+    return mult;
+
+
+
+}
     
-          
+              
     
    
 </script>
