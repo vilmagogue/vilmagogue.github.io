@@ -51,46 +51,44 @@ function test() {
 
     // Build a string to display to the user.
     let output =
-    'Parameters : [17, 8, 9, 5, 20] is '  + count1 + '<br>' +
-    'Parameters : [ 12, 4, 8, 15, 17, 5, 20, 11] is ' + count2 + '<br>' +
-    'The products result in mult1 is '   +  mult1 + '<br>' +
-    'The products result in mult2 is '   +     mult2;
+    'Parameters : [17, 8, 9, 5, 20] is '  + count1 + '<br>' + 
+    'Parameters : [ 12, 4, 8, 15, 17, 5, 20, 11] is ' + count2+ '<br>' + 
+    'Results are '   + mult1 + '<br>' +
+    'Results are '   +     mult2;
 
     // Display the output string for the user to see.
     document.getElementById('output').innerHTML = output;
 }
 
-function countEvens(list){
+            function countEvens(list){
 
-let count = 0;
-let i = 0;
-while (i < list.length) {
-    if (list[i]%2==0){
-        count ++;
-    }
-    i++
+            let count = 0;
+            let i = 0;
+            while (i < list.length) {
+                if (list[i]%2==0){
+                count ++;
+            }
+                i++
     
-}
-return count;
-}
-function multiply(list, multiplier){
-let mult = [];
-for (let i = 0; i < list.length; i++) {
-    let mult = list[i] * multiplier;
-    mult.push();
+            }
+        
+                return count;
+            }
+        
+            
+            function multiply(list, multiplier){
+            
+            let operatorX = [];
+                for (let i = 0; index < list.length; i++) {
+                    let products = list[i] * multiplier;
+                operatorX.push(products);
     
-}
-
-    return mult;
-
-
-
-}
-    
-              
-    
-   
+            }
+                return operatorX;
+            }
+                 
 </script>
     
  </body>
  </html>      
+ 
