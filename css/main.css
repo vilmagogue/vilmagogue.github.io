@@ -1,0 +1,26 @@
+body {
+    font-size: 18px;
+   
+}
+header, nav, main, footer {
+margin: 1.25rem auto;
+max-width: 760px;
+}
+
+
+header, footer {
+    background-color: #C19A00;
+    color: navy;
+    text-align: center;
+    padding: 1.5rem;
+    
+}
+.wearMask {
+float: right ;
+margin: 1px;
+margin-top: 2px;
+
+}
+.currentdate {
+color : white;
+}
