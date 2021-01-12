@@ -1,12 +1,19 @@
 body {
     font-size: 18px;
+    background-color: black;
    
 }
 header, nav, main, footer {
 margin: 1.25rem auto;
 max-width: 760px;
+font-family: 'Fraunces', serif;
 }
-
+h1 {
+    font: 'Fraunces',italic;
+}
+h2 {
+    color: purple;
+}
 
 header, footer {
     background-color: #C19A00;
@@ -19,6 +26,7 @@ header, footer {
 float: right ;
 margin: 1px;
 margin-top: 2px;
+box-shadow: 5px 5px 5px  gray;
 
 }
 .currentdate {
