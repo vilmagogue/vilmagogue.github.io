@@ -24,8 +24,8 @@ header, footer {
     padding: 1.5rem;
     
 }
-.wearMask {
-float: right ;
+header img {
+
 margin: 1px;
 margin-top: 2px;
 box-shadow: 5px 5px 5px  gray;
