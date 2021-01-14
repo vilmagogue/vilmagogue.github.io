@@ -10,9 +10,11 @@ font-family: 'Fraunces', serif;
 }
 h1 {
     font: 'Fraunces',italic;
+    font-size: 2.5em;
 }
 h2 {
     color: purple;
+    font-size: 1.5rem;
 }
 
 header, footer {
