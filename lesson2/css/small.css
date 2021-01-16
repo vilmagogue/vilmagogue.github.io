@@ -34,16 +34,27 @@ box-shadow: 5px 5px 5px  gray;
 .currentdate {
 color : white;
 }
-main {
-    display: grid;
-    grid-template-columns: 1fr;
-    font-size: 1em;
-   
-}
-main section {
-    color: navy;
-    font-family: 'Montserrat', sans-serif;
-}
+
 section:nth-child(2) {
 grid-column: span 2;
 }
+main {
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr;
+	grid-gap: 5px;
+	padding: 5px;
+    grid-area: main;
+    font-size: 1em;
+}
+.section1 {
+    color: navy;
+    font-family: 'Montserrat', sans-serif;
+    padding:7px;
+}
+
+picture {
+	align-items:center;
+	text-align:center;
+}
+
+
