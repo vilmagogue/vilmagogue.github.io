@@ -1,3 +1,27 @@
-@media only screen and (min-width: 32.5em) {
+@media only screen and (min-width: 37.5em) {
     
+    
+    section:nth-child(2) {
+        display:none;
+        margin: 0.5rem;
+    
+    }
+    section:nth-child(3) {
+        grid-column: span 2;
+    }
+      main {  
+        grid-template-columns: 1fr 1fr 1fr;
+        
+    }
+    .section1 {
+        color: navy;
+        font-family: 'Montserrat', sans-serif;
+        padding:7px;
+    }
+    
+    picture {
+        align-items:center;
+        text-align:center;
+    }
+     
 }
