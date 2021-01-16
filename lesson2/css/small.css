@@ -1,0 +1,49 @@
+body {
+    font-size: 18px;
+    background-color: white;
+   
+}
+header, nav, main, footer {
+margin: 1.25rem auto;
+max-width: 960px;
+font-family: 'Fraunces', serif;
+}
+h1 {
+    font: 'Fraunces',italic;
+    font-size: 2.5em;
+}
+h2 {
+    color: purple;
+    font-size: 1.5rem;
+}
+
+header, footer {
+    background-color: #C19A00;
+    color: navy;
+    text-align: center;
+    padding: 1.5rem;
+    
+}
+header img {
+
+margin: 1px;
+margin-top: 2px;
+box-shadow: 5px 5px 5px  gray;
+
+}
+.currentdate {
+color : white;
+}
+main {
+    display: grid;
+    grid-template-columns: 1fr;
+    font-size: 1em;
+   
+}
+main section {
+    color: navy;
+    font-family: 'Montserrat', sans-serif;
+}
+section:nth-child(2) {
+grid-column: span 2;
+}
