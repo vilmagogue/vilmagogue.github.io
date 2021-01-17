@@ -1,18 +1,14 @@
 @media only screen and (min-width: 37.5em) {
-    
-
-    section:nth-child(3) {
-        grid-column: span 2;
+    main {
+        display:grid;
+        grid-template-columns: 1fr 1fr ;
     }
-      main {  
-        grid-template-columns: 1fr 1fr;
-        
+    main img {
+        display:none;
+        margin:0.5rem;
+       
     }
     
     
-    .img-screenshot2 {
-        align-items:center;
-        text-align:center;
-    }
-     
+   
 }

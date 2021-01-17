@@ -1,66 +1,71 @@
-body {
-    font-size: 18px;
-    background-color: white;
-   
-}
-header, nav, main, footer {
-margin: 1.25rem auto;
-max-width: 960px;
-font-family: 'Fraunces', serif;
-}
-h1 {
-    font: 'Fraunces',italic;
-    font-size: 2.5em;
-}
-h2 {
-    color: purple;
-    font-size: 1.5rem;
-}
+@media only screen and (min-width: 18.125em) {
+    main {
+        grid-template-columns: 1fr;
+    }
 
-header, footer {
-    background-color: #C19A00;
-    color: navy;
-    text-align: center;
-    padding: 1.5rem;
+    body {
+        font-size: 10px;
+        background-color: white;
+       
+    }
+    header, main, footer {
+    margin: 1.25rem auto;
+    max-width: 960px;
+    font-family: 'Fraunces', serif;
+    }
+    h1 {
+        font: 'Fraunces',italic;
+        font-size: 2.5em;
+    }
+    h2, h3 {
+        color: purple;
+        font-size: 1.5rem;
+    }
     
-}
-header img {
-margin: 1px;
-margin-top: 2px;
-box-shadow: 5px 5px 5px  gray;
+    
+    header, footer {
+        background-color: #C19A00;
+        color: navy;
+        text-align: center;
+        padding: 1.5rem;
+        
+    }
+   .headline{
+       text-align: center;
+    
+   }
+   main{
+       display:block;
+   }
+    main section{
+       margin : 0.5rem;
+       border: 1px solid navy;
+        text-align:center;
+        background-color:  #C19A00;
+        color: navy;
+        padding: 1.5rem
+        
+    }
+   main p{
+       text-align:center;
+   }
+   main img{
+    
+        width: 300px;
+        height: auto;
+   }
+   .mid-sect-img
+       .right-sect-img
+       .left-sect-img{
+padding: 1px;
+border: 5px;
+       }
+       section:nth-child(2){
+           grid-column: span 2;
+       }
+   }
 
-}
-.currentdate {
-color : white;
-}
 
-main {
-    display: grid;
-    grid-template-columns: 1fr;
-    font-size: 1em;
-}
-main section {
-    margin: 0.5rem;
-    border: 1px;
-    padding: 0 1rem;
-    background-color: gray;
- 
-}
-main img {
-    display:none;
-    margin:0.5rem;
-}
-.img-screenshot1 {
-    grid-column: 1;
-    grid-gap: 10px;
-
-}
-section:nth-child(2){
-    display: none;
-    margin:0.5rem;
-}
-.section1 {
-    color: navy;
-    font-family: 'Montserrat', sans-serif;
-    padding:7px;
-}
+      
+    
+    
