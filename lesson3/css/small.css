@@ -1,0 +1,53 @@
+body{
+    font-size: 18px;
+    font-family: 'Nunito', sans-serif;
+    background-color: navy;
+}
+header,
+nav,
+main,
+footer{
+    max-width: 760px;
+    margin: 0 auto;
+}
+h1{
+    color: orange;
+    font-size: 3em;
+}
+h2{
+    color: white;
+    font-size: 2.5em;
+}
+p{
+    color: white;
+}
+nav{
+    background-color: purple;
+    text-align: center;
+    box-shadow: 0 2px 15px gray;
+}
+nav ul{
+overflow: hidden;
+}
+nav ul li a{
+    display:block;
+    color: orange;
+    text-align: center;
+    padding: 0.75rem;
+    font-size: 2.5em;
+}
+nav a:hover{
+    background-color: #bbb;
+    color: navy;
+    
+}
+.home{
+    color:purple;
+}
+main{
+    display:grid;
+    grid-template-columns: 1fr;
+    font-size: 0.8rem;
+    
+}
+
