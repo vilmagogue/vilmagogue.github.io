@@ -9,6 +9,7 @@ main,
 footer{
     max-width: 760px;
     margin: 0 auto;
+    background-color:navy;
 }
 h1{
     color: #EC9F05;
@@ -20,7 +21,7 @@ h2{
 }
 p{
     color: white;
-    font-size: 2em;
+    font-size: 1.5em;
 }
 
 nav{
@@ -36,7 +37,7 @@ overflow: hidden;
     text-align: center;
 }
 
-.button{
+button{
     justify-items: center;
     font-size: 1.75em;
     color: white;
@@ -44,7 +45,7 @@ overflow: hidden;
 }
 
 .home {
-    color:purple;
+    color:#EC9F05;
 }
 main{
     display:grid;
@@ -53,7 +54,7 @@ main{
     
 }
 .colors{
-    width: 100%;
+    width: 75%;
   min-width: 350px;
   margin: auto;
   text-align: center;
@@ -79,8 +80,9 @@ main{
     background-color:purple;
   }
   
-  p.colored {
-   color: purple;
+  p a {
+   color: #EC9F05;
+   font-size: 1.5em;
     
   }
 footer{
