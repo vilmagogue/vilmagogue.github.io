@@ -58,12 +58,7 @@ nav a:hover{
     color: purple;
 }
 
-.button{
-    justify-items: center;
-    font-size: 1.75em;
-    color: white;
-    padding: 15px 15px;
-}
+
 
 .active {
     color:#EC9F05;
