@@ -50,7 +50,8 @@ overflow: hidden;
  nav ul a{
     display:block;   
     text-align: center;
-    font-size:0.95rem;
+    font-size:3em;
+    
 }
 nav a:hover{
     background-color:#bbb;
