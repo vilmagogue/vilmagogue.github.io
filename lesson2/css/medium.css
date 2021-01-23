@@ -1,36 +1,12 @@
-@media only screen and (min-width: 37.5em) {
+@media only screen and (min-width: 481px) {
     main {
         display:grid;
         grid-template-columns: 1fr 1fr ;
     }
-    main section{
-       
-        margin : 0.5rem;
-        border: 1px solid navy;
-         text-align:center;
-         background-color:  #C19A00;
-         color: navy;
-         padding: 1.5rem
-         
-     }
     
-    main p{
-        text-align:center;
-    }
-    main img{
-     
-         width: 250px;
-         height: auto;
- 
-    }
-    header, footer {
-        background-color: #C19A00;
-        color: navy;
-        text-align: center;
-        padding: 1.5rem;
-        
-    }
-}
       
-
-
+img {
+    width:100%;
+    height: auto;
+}
+}

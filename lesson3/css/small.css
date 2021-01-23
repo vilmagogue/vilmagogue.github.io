@@ -32,19 +32,24 @@ nav{
 nav ul{
 overflow: hidden;
 }
- ul a{
+ nav ul li a{
     display:block;   
     text-align: center;
+    font-size:0.95rem;
+}
+nav a:hover{
+    background-color:#bbb;
+    color: purple;
 }
 
-button{
+.button{
     justify-items: center;
     font-size: 1.75em;
     color: white;
     padding: 15px 15px;
 }
 
-.home {
+.active {
     color:#EC9F05;
 }
 main{
@@ -92,4 +97,19 @@ footer{
     font-size:.5em;
     font-size: 1.5em;
     color: white;
+}
+@media only screen and (min-width:37.5em){
+    /* Horizontal menu example */
+    /* Flex*******************************/
+    /* nav ul (display:flex;}
+    nav ul li{flex: 1 1 100;}
+    */
+
+    /* Grid ************************/
+    nav ul {
+        display:grid;
+        grid-template-columns: repeat(auto-fill, minmax(138px, 1fr));
+    
+    
+    }
 }
