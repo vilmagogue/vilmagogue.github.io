@@ -52,6 +52,37 @@ main{
     font-size: 0.8rem;
     
 }
+.colors{
+    width: 100%;
+  min-width: 350px;
+  margin: auto;
+  text-align: center;
+}
+.colors th {
+    background-color: #999;
+  }
+  .colors td{
+    width: 25%;
+    height: 3em;
+  }
+  
+  .primary {
+    background-color: navy;
+  }
+  .secondary {
+    background-color:  #EC9F05;
+  }
+  .accent1 {
+    background-color: white;
+  }
+  .accent2{
+    background-color:purple;
+  }
+  
+  p.colored {
+   color: purple;
+    
+  }
 footer{
     line-height:55px;
     padding: 20px;
