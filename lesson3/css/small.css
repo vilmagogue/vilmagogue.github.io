@@ -1,3 +1,18 @@
+@media only screen and (min-width:37.5em){
+    /* Horizontal menu example */
+    /* Flex*******************************/
+    /* nav ul (display:flex;}
+    nav ul li{flex: 1 1 100;}
+    */
+
+    /* Grid ************************/
+    nav ul {
+        display:grid;
+        grid-template-columns: repeat(auto-fill, minmax(138px, 1fr));
+    
+    
+    }
+
 body{
     font-size: 18px;
     font-family: 'Nunito', sans-serif;
@@ -32,7 +47,7 @@ nav{
 nav ul{
 overflow: hidden;
 }
- nav ul li a{
+ nav ul a{
     display:block;   
     text-align: center;
     font-size:0.95rem;
@@ -98,18 +113,4 @@ footer{
     font-size: 1.5em;
     color: white;
 }
-@media only screen and (min-width:37.5em){
-    /* Horizontal menu example */
-    /* Flex*******************************/
-    /* nav ul (display:flex;}
-    nav ul li{flex: 1 1 100;}
-    */
-
-    /* Grid ************************/
-    nav ul {
-        display:grid;
-        grid-template-columns: repeat(auto-fill, minmax(138px, 1fr));
-    
-    
-    }
 }
