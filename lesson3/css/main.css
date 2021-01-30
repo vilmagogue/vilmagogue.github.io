@@ -1,112 +1,95 @@
-@media only screen and (min-width:37.5em){
-    /* Horizontal menu example */
-    /* Flex*******************************/
-    /* nav ul (display:flex;}
-    nav ul li{flex: 1 1 100;}
-    */
-
-    /* Grid ************************/
-    nav ul {
-        display:grid;
-        grid-template-columns: repeat(auto-fill, minmax(138px, 1fr));
-    
-    
-    }
-
 body{
-    font-size: 18px;
-    font-family: 'Nunito', sans-serif;
-    background-color: navy;
-}
-header,
-nav,
-main,
-footer{
-    max-width: 760px;
-    margin: 0 auto;
-    background-color:navy;
-}
-h1{
-    color: #EC9F05;
-    font-size: 3em;
-}
-h2{
-    color: white;
-    font-size: 2.5em;
-}
-p{
-    color: white;
-    font-size: 1.5em;
-}
+  font-family:'Fraunces', serif;
+  font-size: 16px;
+  background-color: #077187;
 
-nav{
-    background-color: purple;
-    text-align: center;
-    box-shadow: 0 2px 15px gray;
 }
-nav ul{
-overflow: hidden;
-}
- nav ul a{
-    display:block;   
-    text-align: center;
-    font-size:3em;
     
+ /* phone or baseline views*************/
+ header,  nav, main, footer {
+  max-width: 840px;
+  margin: 0 auto;
+ }
+ header, footer{
+ flex-flow:column;
+   background-color: #077187;
+   display: flex;
+   flex-flow: column;
+   align-items: center;
+   justify-content: center;
+   padding: 15px;
+
+ } 
+ 
+h1{
+  color: white;
+  font-size: 2em;
 }
-nav a:hover{
-    background-color:#bbb;
-    color: purple;
+h3{
+  color: #E4C5AF;
+  margin-top: 15px;
 }
+nav{
+  width: 130%;
+  background-color:#74A57F;
+  text-align:center;
+  justify-content: center;
+  box-shadow: 0 2px 15px gray;
+ align-content: center;
+ grid-gap: 10px;
+  
+}
+nav ul{ 
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
 
+  
+}
+nav ul li a{
+  display:block;
+  color:purple;
+  padding: 0.75rem;
+  font-size: 1em;
 
+}
+nav a :hover{
+  background-color: red;
 
+}
 .active {
-    color:#EC9F05;
+  color: yellow;
+}
+.logo{
+  width: 100%;
+}
+#logo{
+  width: 175%;
 }
 main{
-    display:grid;
-    grid-template-columns: 1fr;
-    font-size: 0.8rem;
-    
+  background-color:#9ECE9A;
 }
-.colors{
-    width: 75%;
-  min-width: 350px;
-  margin: auto;
-  text-align: center;
+main p{
+  color: #077187;
+  font-family: 'Fraunces', serif;
 }
-.colors th {
-    background-color: #999;
-  }
-  .colors td{
-    width: 25%;
-    height: 3em;
-  }
-  
-  .primary {
-    background-color: navy;
-  }
-  .secondary {
-    background-color:  #EC9F05;
-  }
-  .accent1 {
-    background-color: white;
-  }
-  .accent2{
-    background-color:purple;
-  }
-  
-  p a {
-   color: #EC9F05;
-   font-size: 1.5em;
-    
-  }
-footer{
-    line-height:55px;
-    padding: 20px;
-    text-align:center; 
-    font-size:.5em;
-    font-size: 1.5em;
-    color: white;
+.Domain image {
+  justify-content: center;
 }
+.Site Map img{
+  justify-content: center;
+}
+@media only screen and (min-width: 37.5em) {
+  /* horizontal menu example */
+  /* nav ul {display: flex; }
+  nav ul li {flex: 1 1 100%;}
+  */
+  /* Grid ********/
+
+  nav ul {
+    display:flex;
+    grid-template-columns:repeat (auto-fill, minmax (75px, 1fr));
+
+  }
 }
