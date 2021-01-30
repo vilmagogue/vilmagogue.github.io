@@ -1,7 +1,7 @@
 body{
   font-family:'Fraunces', serif;
   font-size: 16px;
-  background-color: #077187;
+  background-color: #03045E;
 
 }
     
@@ -12,7 +12,7 @@ body{
  }
  header, footer{
  flex-flow:column;
-   background-color: #077187;
+   background-color: #0077B6;
    display: flex;
    flex-flow: column;
    align-items: center;
@@ -20,7 +20,9 @@ body{
    padding: 15px;
 
  } 
- 
+ footer{
+   background-color:#0077B6;
+ }
 h1{
   color: white;
   font-size: 2em;
@@ -31,7 +33,7 @@ h3{
 }
 nav{
   width: 130%;
-  background-color:#74A57F;
+  background-color:#03045E;
   text-align:center;
   justify-content: center;
   box-shadow: 0 2px 15px gray;
@@ -49,7 +51,7 @@ nav ul{
 }
 nav ul li a{
   display:block;
-  color:purple;
+  color:white;
   padding: 0.75rem;
   font-size: 1em;
 
@@ -68,7 +70,7 @@ nav a :hover{
   width: 175%;
 }
 main{
-  background-color:#9ECE9A;
+  background-color:#CAF0F8;
 }
 main p{
   color: #077187;
