@@ -1,0 +1,94 @@
+body{
+    font-family:'Fraunces', serif;
+    font-size: 16px;
+    background-color: #03045E;
+  
+  }
+      
+   /* phone or baseline views*************/
+   header,  nav, main, footer {
+    max-width: 840px;
+    margin: 0 auto;
+   }
+   header, footer{
+   flex-flow:column;
+     background-color: #0077B6;
+     display: flex;
+     flex-flow: column;
+     align-items: center;
+     justify-content: center;
+     padding: 15px;
+  
+   } 
+   footer{
+     background-color:#0077B6;
+   }
+  h1{
+    color: white;
+    font-size: 2em;
+  }
+  h3{
+    color: #E4C5AF;
+    margin-top: 15px;
+  }
+  nav{
+    width: 200%;
+    background-color:#03045E;
+    text-align:center;
+    justify-content: center;
+    box-shadow: 0 2px 15px gray;
+   align-content: center;
+   grid-gap: 10px;
+    
+  }
+  nav ul{ 
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+  
+    
+  }
+  nav ul li a{
+    display:block;
+    color:white;
+    padding: 0.75rem;
+    font-size: 1em;
+  
+  }
+  nav a :hover{
+    background-color: red;
+  
+  }
+  .active {
+    color: yellow;
+  }
+  main{
+    background-color:#CAF0F8;
+   
+
+  }
+  main p{
+   
+    font-family: 'Fraunces', serif;
+  }
+  @media only screen and (min-width: 32.5em) {
+    /* horizontal menu example */
+    /* nav ul {display: flex; }
+    nav ul li {flex: 1 1 100%;}
+    */
+    /* Grid ********/
+  
+  .heading h1{
+font-size: 3rem;
+margin: 0 0 0  1px;
+  }
+.heading{
+display: flex;
+flex-direction:column;
+}
+    nav ul {
+      display:flex;
+      grid-template-columns:repeat (auto-fill, minmax (175px, 1fr));}
+    }
+  
