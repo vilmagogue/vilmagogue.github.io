@@ -85,10 +85,10 @@ body {
     
     nav button{
       margin: .2rem 2%;
-      background-color: transparent;
+      background-color:gray;
       border: none;
       font-size: 1.6rem;
-      color: #555;
+      color:black;
     }
     nav ul.hide{
       display: block;
