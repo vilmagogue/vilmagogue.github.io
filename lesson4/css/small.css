@@ -1,33 +1,41 @@
 body {
-    font-size: 16px;
-    font-family: "Libre Baskerville", serif;
+    font-size: 18px;
+    font-family: 'Fraunces', serif;
+    background-color:#0077B6;
   }
   
+  h3{
+   font-size: 1em;   
+  }
   header,
   nav,
   main,
   footer {
-    max-width: 760px;
+    max-width: 960px;
     margin: 0 auto;
   }
   
   header {
-    color: #607338;
+    color:#CAF0F8;
     /* display: flex;
     flex-flow: column; */
     align-items: center;
     justify-content: center;
     padding-top: 10px;
-    background-color: #2a3640;
+    background-color: #03045E;
   }
-  
+  footer{
+      background-color:#03045E;
+      text-align:center;
+      color:#CAF0F8;
+  }
   #headings {
     display: flex;
     flex-direction: column;
   }
   
   header img {
-    width: 80px;
+    width: 100px;
     height: auto;
     float: left;
     padding-right: 5%;
@@ -43,14 +51,10 @@ body {
     font-size: 1.2rem;
   }
   
-  div.headings2 {
-    text-align: center;
-    font-size: 0.6rem;
-    margin-top: -50px;
-  }
+ 
     nav{
   
-      background-color:#CAF0F8;
+      background-color:#90E0EF;
      font-family: 'Fraunces', serif;
      
       
@@ -64,7 +68,7 @@ body {
     }
     nav ul li a{
       display:block;
-      color:white;
+      color:navy;
       padding: 0.75rem 2%;
      border-top:1px solid rgba (0,0,0,0.3);
       text-decoration:none;
@@ -88,6 +92,11 @@ body {
     }
     nav ul.hide{
       display: block;
+      
+    } 
+    main{
+        color: navy;
+        background-color:white;
     }
   /*****Clearfix: Force an element not*/
   .clearfix:after{
