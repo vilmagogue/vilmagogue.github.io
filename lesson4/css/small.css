@@ -28,6 +28,7 @@ body {
       background-color:#03045E;
       text-align:center;
       color:#CAF0F8;
+      font-size: 1em;
   }
   #headings {
     display: flex;
@@ -35,26 +36,25 @@ body {
   }
   
   header img {
-    width: 100px;
+    width: 200px;
     height: auto;
-    float: left;
     padding-right: 5%;
     padding-left: 2%;
   }
   
-  section.headings1 {
+  section.headings {
     text-align: center;
-    margin-top: -15px;
+   
+   
   }
   
   .headings1 {
-    font-size: 1.2rem;
+    font-size: 0.8rem;
   }
   
  
     nav{
-  
-      background-color:#90E0EF;
+     background-color:#90E0EF;
      font-family: 'Fraunces', serif;
      
       
@@ -68,15 +68,15 @@ body {
     }
     nav ul li a{
       display:block;
-      color:navy;
+      color:#03045E;
       padding: 0.75rem 2%;
-     border-top:1px solid rgba (0,0,0,0.3);
+      border-top:1px solid rgba (0,0,0,0.3);
       text-decoration:none;
     
     }
     nav ul li.active a{
       background-color: rgba (0,0,0,0.2);
-      color: yellow;
+     
     }
     nav ul li a :hover{
       background-color: rgba(0,0,0,0.4);
@@ -95,7 +95,7 @@ body {
       
     } 
     main{
-        color: navy;
+        color:#03045E;
         background-color:white;
     }
   /*****Clearfix: Force an element not*/
