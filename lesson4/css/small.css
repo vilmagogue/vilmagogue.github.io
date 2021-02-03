@@ -2,109 +2,165 @@ body {
     font-size: 18px;
     font-family: 'Fraunces', serif;
     background-color:#0077B6;
-  }
-  
-  h3{
-   font-size: 1em;   
+    padding: 0;
+	margin: 0;
   }
   header,
-  nav,
-  main,
-  footer {
-    max-width: 960px;
-    margin: 0 auto;
-  }
+nav,
+main,
+footer {
+  max-width: 960px;
+  margin: 0 auto;
+}
   
-  header {
-    color:#CAF0F8;
-    /* display: flex;
-    flex-flow: column; */
-    align-items: center;
-    justify-content: center;
-    padding-top: 10px;
-    background-color: #03045E;
-  }
-  footer{
-      background-color:#03045E;
-      text-align:center;
-      color:#CAF0F8;
-      font-size: 1em;
-  }
-  #headings {
+header {
+	background-color:white;
+	padding-top: 10px;
+	display: flex;
+	align-items:center;
+    justify-content:center;
+    color: rgb(92, 92, 13);
+}
+
+#headings {
     display: flex;
     flex-direction: column;
   }
-  
-  header img {
-    width: 200px;
+.headings h1 {
+	font-size: 1.6rem;
+	margin: 0 0 0 17px;
+}
+header img {
+    width: 80px;
     height: auto;
+    float: left;
     padding-right: 5%;
     padding-left: 2%;
   }
-  
-  section.headings {
-    text-align: center;
-   
-   
-  }
-  
+.motto {
+	font-style: italic;
+	letter-spacing: 1px;
+	color: white;
+	margin-left: 20px;
+	font-size: .9rem;
+}
+
   .headings1 {
-    font-size: 0.8rem;
+    font-size: 1.2rem;
+  }
+
+  
+  nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
   }
   
- 
-    nav{
-     background-color:#90E0EF;
-     font-family: 'Fraunces', serif;
-     
-      
-    }
-    nav ul{ 
-      list-style: none;
-      margin: 0;
-      padding: 0;
-     
-      
-    }
-    nav ul li a{
-      display:block;
-      color:#03045E;
-      padding: 0.75rem 2%;
-      border-top:1px solid rgba (0,0,0,0.3);
-      text-decoration:none;
+  nav ul li a {
+    display: block;
+    text-decoration: none;
+    padding: 0.8rem 2%;
+    color: black;
+    border-top: 1px solid rgba(0, 0, 0, 0.3);
+    background-color: #CAF0F8;
+  }
+  
+  nav ul li.active a {
+    background-color: rgba(153, 180, 191, 0.5);
+    color: white;
+  }
+
+  
+  footer{
+    background-color:#03045E;
+    text-align:center;
+    color:#CAF0F8;
+    font-size: 1em;
+} 
     
-    }
-    nav ul li.active a{
-      background-color: rgba (0,0,0,0.2);
-     
-    }
-    nav ul li a :hover{
-      background-color: rgba(0,0,0,0.4);
+   /* Larger viewports */
+@media only screen and (min-width: 32.5em) {
+	header img {
+		width: 100%;
+	}
+
+	.headings h1 {
+        font-size: 3rem;
+        color:#03045E;
+	}
+
+	.motto{
+		letter-spacing: 1.5pt;
+		font-size: larger;
+		margin-left: 17px;
+	}
+}
+
+
+   /* Small/Phone View ***************/
+nav {
+	margin: 0 auto;
+	max-width: 960px;
+	background-color:  #00B4D8;
+}
+.navigation {
+	list-style: none;
+    padding: 0;
+   
+    overflow: hidden;
+}
+.navigation li:first-child {
+	display: block;
+}
+.navigation li {
+	display: none;
+}
+.navigation a {
+	display: block;
+	padding: 0.75rem;
+	text-align: left;
+	text-decoration: none;
+	color: #1B998B;
+	font-weight: 700;
+}
+.navigation a:hover {
+	color: white;
+	background-color:#90E0EF;
+}
+.responsive a{
+    font-size: 1.3rem;
+}
+.responsive li{
+    display: block;
+    width: 150px;
+}
+
+/* the onclick JS toggles the .reponsive class from display none (.navigation li) to display block because the responsive class is added to the end of the class list like this in HTML.
+  <ul class="navigation responsive">
+*/
+.responsive li {
+    display: block;
     
-    }
-    
-    nav button{
-      margin: .2rem 2%;
-      background-color:gray;
-      border: none;
-      font-size: 1.6rem;
-      color:black;
-    }
-    nav ul.hide{
-      display: block;
-      
-    } 
+}
+
+/* Media Query for medium+ views */
+@media only screen and (min-width: 32.5em) {
+	.navigation {
+		display: flex;
+	}
+	.navigation li {
+		display: block; /* change state in small view */
+		flex: 1 1 auto;
+	}
+	.navigation a {
+		text-align: center;
+	}
+	.navigation li:first-child {
+		display: none;
+	}
+}
     main{
         color:#03045E;
         background-color:white;
     }
-  /*****Clearfix: Force an element not*/
-  .clearfix:after{
-    content:"";
-    display: table;
-    clear:both;
-  }
   
-    
-    
-   
