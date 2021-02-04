@@ -1,5 +1,5 @@
 body {
-    font-size: 18px;
+    font-size: 16px;
     font-family: 'Fraunces', serif;
     background-color:#0077B6;
     padding: 0;
@@ -163,4 +163,8 @@ nav {
         color:#03045E;
         background-color:white;
     }
-  
+    .clearfix:after {
+      content: "";
+      display: table;
+      clear: both;
+  }
