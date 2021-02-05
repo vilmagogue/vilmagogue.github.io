@@ -18,5 +18,23 @@ nav ul li a {
 nav ul.hide {
     display: block;
 }
+
+table style{
+width:100%;
+}
+.weatherIcon {
+    width: 100%;
+    min-width: 350px;
+    margin: auto;
+    text-align: center;
+  }
+  .weatherIcon th {
+    background-color: #999;
+  }
+  .weatherIcon td{
+    width: 25%;
+    height: auto;
+  }
+ 
 }
 /*end medium */
