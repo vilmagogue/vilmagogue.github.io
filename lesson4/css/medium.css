@@ -1,23 +1,22 @@
-/* Media Query for medium+ views */
-@media only screen and (min-width: 32.5em) {
-	.navigation {
-		display: flex;
-	}
-	.navigation li {
-		display: block; /* change state in small view */
-		flex: 1 1 auto;
-	}
-	.navigation a {
-		text-align: center;
-	}
-	.navigation li:first-child {
-		display: none;
-	}
+/* 35em is also 560px when basefont is 16px */
+@media only screen and (min-width: 35em)
+{
+nav button{
+    display: none;
 }
-    main{
-        color:#03045E;
-        background-color:white;
-    }
-  
-  
-  /*medium end*/
+nav ul {
+    margin-left: 2%;
+}
+nav ul li {
+    float: left;
+}
+nav ul li a {
+    border: none;
+    border-right: 1px solid rgba(0,0,0,0.3);
+    padding: .8rem 1rem;
+}
+nav ul.hide {
+    display: block;
+}
+}
+/*end medium 
