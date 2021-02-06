@@ -126,8 +126,11 @@ main p{
         padding:1.5rem;
         box-shadow: 0 0 30px #111;
         opacity: .8;
+        color: orange;
     }
-
+.span{
+    color:#03045E;
+}
 .action{
     position: relative;
     text-align:center;
@@ -147,15 +150,14 @@ marquee{
     background-color:#03045E;
     }
     .action1{
-        position: relative;
-        text-align:center;
+        text-align:left;
         margin-top: 20px;
     }  
  .headline{
     margin-top: 50px;   
     font-size: 2rem;
     font-family:'Fraunces', serif;
-    color: rgb(92, 92, 13, 0.8);  
+    color: orange;  
 }
 img{
     float: right;
@@ -184,10 +186,11 @@ h4{
     grid-column: 2;
     grid-row: 2;
     font-size: 1.5rem;
-    color: rgb(92, 92, 13);
+    color:#03045E;
 }.map{
     grid-column: 1;
     grid-row: 1;
+    color: orange;
 }
 .image1{
     grid-column: 1;
