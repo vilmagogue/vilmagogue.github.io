@@ -49,9 +49,7 @@
     <!--CONTENT HERE-->
   
 <main>
-    <div class="box-content">
-        <h2 class="townName">Preston Idaho</h2>
-    </div>
+    
     <figure class="heroImage">
         <img src="images/franklinOriginal(default).jpeg" alt="Preston Banner Field" sizes="100vw"
         srcset="images/franklinOriginal(1130px).jpeg 1200w,
@@ -61,12 +59,27 @@
         <section class="weatherStats">
             <h2>Statistics</h2> 
             
-            <p>Currently: <span id="weather">Cloudy</span></p> 
-          <p>High: <span id="temperature">50&degF</span></p>
-          <p>Wind Chill: <span id="windChill">22&degF</span></p>
-          <p>Wind Speed: <span id="mph">12mph</span></p>
+            <p>Temperature (F): <input type="text" id="temperature"></p>
+            <p>Wind Speed (mph): <input type="text" id="windSpeed"></p>
+            <p>Wind Chill: <span id="windChill"></span></p>
+
+            <button type="button" onclick="doInputOutput()">Wind Chill</button>
+            <p id="output"></p>
      </section>
-     </div>
+    
+    
+     let tempF = parseInt(document.getElementById('temperature').value);
+     let windSpeed = parseInt(document.getElementById('windSpeed').value);
+ document.getElementById('output').innerHTML = windChill  (tempF, windSpeed) + " - The coolest temperature today🇬🇺🇺🇸!";
+ 
+ }
+    
+     
+
+     <div class="box-content">
+        <h2 class="townName">Preston Idaho</h2>
+    </div>
+     </p>
     </figure>
     
     <div class="box-content1">
@@ -77,10 +90,8 @@
         srcset="images/umbrella(375px).jpg 400w,
         images/umbrella(780px).jpg 800w,
         images/umbrella(1200px).jpg 1200w">
-        <figcaption>
-            Preston Field
-        </figcaption>
-   
+        
+
 </figure>      
   
         <article>
@@ -115,6 +126,7 @@
         </article>
                
     </div>
+
 <section>
 <div class="home-grid">
     <h3 class="map">United States Map</h3>
@@ -155,10 +167,7 @@
 </div> </div>  </div>
 </section>     
    
-   
-  
 
-    
 </main> 
 <footer>
 
@@ -170,12 +179,9 @@
 
 </footer>
 
-<script src="js/currentdate.js">
-
-</script>
- <script src="js/scripts.js">
-
- </script> 
+<script src="js/currentdate.js"></script>
+ <script src="js/scripts.js"></script> 
+ <script src="windchill.js"></script>
 </body>
      
    

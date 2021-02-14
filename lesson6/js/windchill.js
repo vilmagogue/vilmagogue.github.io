@@ -5,7 +5,7 @@ function doInputOutput() {
     
     let tempF = parseInt(document.getElementById('temperature').value);
     let windSpeed = parseInt(document.getElementById('windSpeed').value);
-document.getElementById('output').innerHTML = windChill  (tempF, windSpeed) + " - The coolest temperature in Guam🇬🇺🇺🇸!";
+document.getElementById('output').innerHTML = windChill  (tempF, windSpeed) + " - The coolest temperature today🇬🇺🇺🇸!";
 
 }
  
