@@ -8,7 +8,7 @@
     <meta name="description" content="Create Weather Site planning with its fundamental purposes, objective 
         design, responsive design, target audience and content">
         <marquee>"Saturday = Preston Pancakes in the Park!  9:00 a.m. Saturday at the city park pavilion."</marquee>
-    
+            
         </marquee> 
     <link rel="google-fonts" href="https://fonts.gstatic.com">
 
@@ -18,18 +18,18 @@
     <link rel="stylesheet" href="css/medium.css">
     
 <link rel="stylesheet" href="css/large.css">
-    <link rel="preconnect" href="https://fonts.gstatic.com">
+   
     <link href="https://fonts.googleapis.com/css2?family=Nunito&display=swap" rel="stylesheet">
 </head>
 <body>
 
 <header>
     <picture>
-        <img class="logo" src="images/projLogo.jpg" alt="PacificToday">  
+        <img class="logo" src="images/projLogo.jpg" alt="PrestonToday">  
     </picture>
     <section class="headings">
-        <h1 >PacificToday Weather Forecast</h1>
-        <div class="motto">The Most Reliable Weather Forecast</div>
+        <h1 >PrestonToday Weather Forecast</h1>
+        <div class=" motto">The Most Reliable Weather Forecast</div>
     </section>
 </header>
  <!--NAVIGATION HEARE--> 
@@ -49,11 +49,15 @@
     <!--CONTENT HERE-->
   
 <main>
-    <div class="action">
+    <div class="box-content">
         <h2 class="townName">Preston Idaho</h2>
     </div>
-    <div class="heroImage">
-        <img src="image/wdd230_image_franklinOriginal(1).jpeg" alt="WDD230 OriginalFranklin image">   
+    <figure class="heroImage">
+        <img src="images/franklinOriginal(default).jpeg" alt="Preston Banner Field" sizes="100vw"
+        srcset="images/franklinOriginal(1130px).jpeg 1200w,
+        images/franklinOriginal(768px).jpeg 800w,
+        images/franklinOriginal(375px).jpeg 400w">
+       
         <section class="weatherStats">
             <h2>Statistics</h2> 
             
@@ -63,8 +67,9 @@
           <p>Wind Speed: <span id="mph">95mph</span></p>
      </section>
      </div>
-    
-     <div class="action1">
+    </figure>
+   
+    <div class="box-content1">
         <h2 class="headline">Umbrella</h2>
     </div>
        <img src="images/floatImg.jpeg" alt="https://unsplash.com/s/photos/weather" style="width:270px;height:240px;margin-left:15px;">   
@@ -90,11 +95,17 @@
                      reiciendis voluptatibus natus consectetur amet, ullam molestiae commodi in veritatis 
                      laboriosam aliquam eum tenetur dolores omnis fugit? Enim veniam qui vero voluptas
                       ducimus officiis, 
-                        maiores amet officia possimus omnis saepe quas ut, distinctio provident,</p>
+                        maiores amet officia possimus omnis saepe quas ut, distinctio provident. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Neque cumque similique 
+                        ratione enim delectus veritatis beatae expedita mollitia quibusdam nostrum.
+                         Similique, hic ratione. Nisi aut voluptate sint nemo animi dolorem eveniet numquam 
+                         eos porro reiciendis voluptatibus natus consectetur amet, ullam molestiae commodi 
+                         in veritatis laboriosam aliquam eum tenetur dolores omnis fugit? Enim veniam qui 
+                         vero voluptas ducimus officiis, maiores amet officia possimus omnis saepe quas ut,
+                          distinctio provident.</p>
                 </p>
         </article>
                
-    
+    </div>
 <section>
 <div class="home-grid">
     <h3 class="map">United States Map</h3>
@@ -133,7 +144,9 @@
        />
      </a>
 </div> </div>  </div>
-</section>
+</section>     
+   
+   
   
 
     
@@ -153,9 +166,9 @@
 </script>
  <script src="js/scripts.js">
 
- </script>
-  
+ </script> 
 </body>
+     
    
 
 </html>
