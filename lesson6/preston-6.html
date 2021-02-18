@@ -49,7 +49,7 @@
     <!--CONTENT HERE-->
   
 <main>
-    
+  
     <figure class="heroImage">
         <img src="images/franklinOriginal(default).jpeg" alt="Preston Banner Field" sizes="100vw"
         srcset="images/franklinOriginal(1130px).jpeg 1200w,
@@ -61,8 +61,8 @@
             
             <p>Temperature (F): <input type="text" id="temperature"></p>
             <p>Wind Speed (mph): <input type="text" id="windSpeed"></p>
-            <p>Wind Chill: <span id="windChill"></span></p>
-
+            <p>Wind Chill: <p< id="windChill"> °F</p>
+            
             <button type="button" onclick="doInputOutput()">Wind Chill</button>
             <p id="output"></p>
      </section>
@@ -70,17 +70,60 @@
      <div class="box-content">
         <h2 class="townName">Preston Idaho</h2>
     </div>
-     </p>
+     
     </figure>
-    
-    <div class="box-content1">
-        <h2 class="headline">Umbrella</h2>
+    <div id="5days_weatherForecast">
+        <caption>
+            <h3 class="5-day-forecast">5 Days Forecast</h3>
+        </caption>
+        <tbody>
+            <tr class="color_table">
+    <table style="width:100%">
+        <tr>
+          <th>Mon</th>
+          <th>Tue</th> 
+          <th>Wed</th>
+          <th>Thur</th>
+          <th>Fri</th>
+        </tr>
+              
+<tr>
+    <td> 
+        <img class="weather-icon" src="images/rain.png" alt="https://icons8.com/icons/set/rain">
+    </td>
+    <td> 
+        <img class="weather-icon" src="images/snowy-sunny-day.png" alt="https://icons8.com/icons/set/rain">
+    </td>
+    <td> 
+        <img class="weather-icon" src="images/sun.png" alt="https://icons8.com/icons/set/rain">
+    </td>
+    <td> 
+        <img class="weather-icon" src="images/snowy-night.png" alt="https://icons8.com/icons/set/rain">
+    </td>
+    <td> 
+        <img class="weather-icon" src="images/windy-weather.png" alt="https://icons8.com/icons/set/rain">
+    </td>
+   
+   
+</tr>
+<tr>
+    <th>22&deg</th>
+    <th>5&deg</th> 
+    <th>10&deg</th>
+    <th>22&deg</th>
+    <th>90&deg</th>
+  </tr>
+</table>  
+        </tbody>
     </div>
-    <figure class="umbrella">
-        <img src="images/umbrella.jpg" size="50vw"
-        srcset="images/umbrella(375px).jpg 400w,
-        images/umbrella(780px).jpg 800w,
-        images/umbrella(1200px).jpg 1200w">
+    <div class="box-content1">
+        <h2 class="headline">Places</h2>
+    </div>
+    <figure class="places">
+        <img src="images/places.jpeg" size="50vw"
+        srcset="images/place(375px).jpeg 400w,
+        images/places(780px).jpeg 800w,
+        images/places(1200px).jpeg 1200w">
         
 
 </figure>      
@@ -173,6 +216,8 @@
 <script src="js/currentdate.js"></script>
  <script src="js/scripts.js"></script> 
  <script src="windchill.js"></script>
+  <script src="js/windChill.js"></script>
+              
 </body>
      
    
