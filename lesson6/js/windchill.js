@@ -9,4 +9,4 @@ function windChill(temp, speed){
     }
     return chill.toFixed(2);
 }
-document.getElementById("windChill").innerHTML = windChill();
+document.getElementById("windChill").innerHTML = windChill(48, 3);
