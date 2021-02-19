@@ -8,12 +8,13 @@ function preloadImage(img) {
   }
 
   img.src = src;
+  img.removeAttribute('data-src');
 }
 
 //will start loading .img file when it is 300px below the viewport)
 const imgOptions = {
-  threshold: 0,
-  rootMargin: "0px 0px 300px 0px",
+  threshold: 1,
+  rootMargin: "0px 0px 50px 0px",
 };
 
 //loop through the images and determine which ones need to be shown
