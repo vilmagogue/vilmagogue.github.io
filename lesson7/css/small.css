@@ -2,15 +2,22 @@ picture{
    
     display: grid;
     grid-template-columns: 1fr;
-    grid-gap: 20px;
+    grid-gap: 2em;
     align-items: center;
-    justify-content: center;
+    justify-items: center;
+   
 }
 h1 {
-    font-size: 1.5rem;
+    font-size: 2.5rem;
+    font-family: 'Fraunces',serif;
+    text-align: center;
 }
 picture img {
+    display: grid;
+    grid-column: 1;
     border: 1px solid grey;
+   
+   
     padding: 2px;
     filter-blur: (0px);
     transition: 2s;
@@ -18,9 +25,4 @@ picture img {
 }
 picture img[ data-src]{
     filter: blur(5px);
-}
-p {
-    font-size: 0.8rem;
-   
-    margin: 10px;
 }
