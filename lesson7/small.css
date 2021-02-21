@@ -1,0 +1,148 @@
+/*Prevents adjustments of font size after orientation changes in IE on Windows Phone and in IOS. */
+html{-webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%;
+}
+/*--------apply a natural box layout model to all elements------------*/
+*{-moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box;}
+body {
+    font-size: 16px;
+    font-family: 'Fraunces', serif;
+    background-color:#0077B6;
+    padding: 0;
+	margin: 0;
+  }
+  header,
+  nav,
+  main,
+  footer {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+  header {
+	background-color:white;
+	padding-top: 10px;
+	display: flex;
+	align-items:center;
+    justify-content:center;
+    color: rgb(92, 92, 13);
+}
+section{
+    display: flex;
+    flex-direction: column;
+}
+
+.headings h1 {
+	font-size: 2.6rem;
+	margin: 0 0 0 17px;
+}
+header img {
+    width: 100%;
+    height: auto;
+    float: left;
+    padding-right: 5%;
+    padding-left: 2%;
+  }
+.motto {
+	font-style: italic;
+	letter-spacing: 1px;
+	color: navy;
+	margin-left: 20px;
+	font-size: .9rem;
+}
+
+  .headings1 {
+    font-size: 1.2rem;
+  }
+
+/***************** Navigation Content********************************/
+
+nav button {
+    margin: 0.2rem 2%;   
+    background-color: transparent;
+    border: none;
+    font-size: 1.6rem;
+    color: #555;
+}
+nav {
+    background-color: #ccc;
+    font-family: 'Fraunces', serif;
+}
+nav ul{
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}  
+nav ul li a {
+    display: block;
+    padding: .8rem 2%;
+    text-decoration: none;
+    color: #000;
+    border-top: 1px solid rgba(0,0,0,0.3)
+}
+nav ul li a:hover {
+    background-color: rgba(0,0,0,0.4);
+color: orange;
+}
+nav ul li.active a {
+    background-color: rgba(0,0,0,0.2);
+    color: white;
+}
+nav ul.hide{
+    display: none;
+}
+/*--------Clearfix: Force an element not to collapse------*/
+.clearfix:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+/********** Main Content **********************/
+
+div img[data-src] {
+    filter: blur(5px);
+    }
+
+figure img{
+    filter: blur(0px);
+    transition: filter 0.5s;
+  }
+
+main{
+    text-align: center;
+}
+
+main h2{
+    font-size: 3rem;
+}
+
+.ImgContainer{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    transition: 1s;
+}
+
+figure:nth-child(n){
+    margin: 15px;
+}
+
+figure:hover:nth-child(n){
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 2);
+    transform: scale(1.05);
+}
+
+img{
+    max-width: 100%;
+}
+
+figcaption{
+    font-size: .8em;
+}
+
+/*----- Clearfix: Force an Element not to collapse -----*/
+.clearfix:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
