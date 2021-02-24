@@ -1,25 +1,28 @@
-//Get all the images with data-src attribute
-const images = document.querySelectorAll("img[data-src]");
+const images = document.querySelectorAll("[data-src]");
 
 function preloadImage(img) {
   const src = img.getAttribute("data-src");
   if (!src) {
     return;
   }
-
+  let options = {
+    root: document.querySelector('#scrollArea'),
+    rootMargin: '0px',
+    threshold: 1.0
+  }
+  
+  let observer = new IntersectionObserver(callback, options);
   img.src = src;
   img.removeAttribute('data-src');
 }
 
-//will start loading .img file when it is 300px below the viewport)
 const imgOptions = {
   threshold: 1,
-  rootMargin: "0px 0px 50px 0px",
+  rootMargin: "0px 0px 10px 0px",
 };
 
-//loop through the images and determine which ones need to be shown
 const imgObserver = new IntersectionObserver((entries, imgObserver) => {
-  entries.forEach((entry) => {
+  entries.forEach(entry => {
     if (!entry.isIntersecting) {
       return;
     } else {
@@ -29,7 +32,7 @@ const imgObserver = new IntersectionObserver((entries, imgObserver) => {
   });
 }, imgOptions);
 
-images.forEach((image) => {
+images.forEach(image => {
   imgObserver.observe(image);
 });
 
