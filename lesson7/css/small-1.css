@@ -20,7 +20,7 @@ picture img {
    
    
     padding: 2px;
-    filter-blur: (0px);
+    filter:blur (0px);
     transition: 2s;
 
 }
