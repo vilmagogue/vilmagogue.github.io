@@ -101,13 +101,17 @@ footer{
     color:#CAF0F8;
     font-size: 1em;
 } 
+img[data-src] {
+    filter: blur(0.2rem);
+  }
   
-div img[data-src] {
-    filter: blur(5px);
-    }
+  img {
+    filter: blur(0rem);
+    transition: filter 0.5s;
+  } 
 
 figure img{
-    filter: blur(0px);
+   
     transition: filter 0.5s;
   }
 
