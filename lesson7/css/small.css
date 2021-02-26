@@ -102,18 +102,13 @@ footer{
     font-size: 1em;
 } 
 img[data-src] {
-    filter: blur(0.2rem);
+    filter: blur(0.5rem);
   }
   
   img {
     filter: blur(0rem);
     transition: filter 0.5s;
   } 
-
-figure img{
-   
-    transition: filter 0.5s;
-  }
 
 main{
     
