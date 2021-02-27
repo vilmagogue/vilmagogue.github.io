@@ -6,7 +6,7 @@ html{-webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%;
 body {
     font-size: 16px;
     font-family: 'Fraunces', serif;
-    background-color:#0077B6;
+    background-color:#90E0EF;
     padding: 0;
 	margin: 0;
   }
@@ -105,3 +105,79 @@ footer{
     color:#CAF0F8;
     font-size: 1em;
 } 
+/**********form************/
+form fieldset {
+    margin: 2em 2em;
+    border: 2px solid navy;
+    border-radius: 10px;
+    padding: .5rem 2%;
+    box-shadow: 10px 10px 10px
+    }
+form legend {
+    color: navy;
+    margin: 0 1rem;
+    padding: 0 .5rem;
+    font-size: 1.5em;
+}    
+form label.top, form div {
+    display: block;
+    padding-top: 1rem;
+    color: orange;
+    font-size: 1rem;
+    text-align: left;
+}
+form label.top input, form label.top select {
+    -webkit-appearance: none;
+    display: block;
+    font-size: 1rem;
+    border: solid 1px #999;
+    border-radius: 4px;
+    padding: .75rem;
+    color : #555;
+    width: 100%;
+    max-width: 20rem;
+    background-color: rgba(0,0,0,0.3);
+}
+form label.sbs {
+    display: block;
+    padding: .75rem 0;
+    color: #555;
+}
+form input.submitBtn {
+    border: none;
+    background-color: white;
+    color: white;
+    border-radius: 1rem;
+    padding: .75rem 1.5rem;
+    margin: 0 0 2rem 2%;
+    width: 96%;
+    max-width: 20rem;
+}
+form label.top input:required {
+    border-left: orange 6px;
+}
+form label.top input:required:valid {
+    border-left: green solid 6px;
+}.flexly {
+	display: flex;
+	align-items: center;
+
+}
+#ratingvalue {
+	margin: 0 15px;
+	color: navy;
+}
+
+textarea {
+    border: solid 2px #777;
+    border-radius: 4px;
+    padding: .75rem;
+    width: 100%;
+}
+
+/*----- Clearfix: Force an Element not to collapse -----*/
+.clearfix:after {
+  content: "";
+  display: table;
+  clear: both;
+}
