@@ -6,7 +6,7 @@ html{-webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%;
 body {
     font-size: 16px;
     font-family: 'Fraunces', serif;
-    background-color:#90E0EF;
+    background-color:#CAF0F8;
     padding: 0;
 	margin: 0;
   }
@@ -136,22 +136,25 @@ form label.top input, form label.top select {
     color : #555;
     width: 100%;
     max-width: 20rem;
-    background-color: rgba(0,0,0,0.3);
+    background-color:#00B4D8;
 }
 form label.sbs {
     display: block;
     padding: .75rem 0;
     color: #555;
-}
+   
+    }
+
 form input.submitBtn {
     border: none;
-    background-color: white;
+    background-color: #777;
     color:  #03045E;
     border-radius: 1rem;
     padding: .75rem 1.5rem;
     margin: 0 0 2rem 2%;
     width: 96%;
-    max-width: 20rem;
+    max-width: 25rem;
+    
 }
 form label.top input:required {
     border-left: rgb(92, 92, 13) 6px;
