@@ -1,23 +1,23 @@
+
 h1 {
-font: ubunto, san serif;
-}
-
-thead {
+  font: ubunto, san serif;
+  }
   
-  color:#e7f0ed;
-}
-tbody {
-  color:#e7ffed;}
-tfoot {color:#628ca6;}
-
-table, th, td {
-  border: 5px solid grey;
+  thead {
+    
+    background-color:#e7f0ed;
+  }
+  tbody {
+    background-color:#e7ffed;
+  }
+  tfoot {
+    background-color:#628ca6;
+  }
   
-  text-align: center;
-  font-size: 2rem;
-  box-shadow: 2px;
-}
-
-p:nth-child(1) {
-  background: red;
-}
+  table, th, td {
+    border: 1px solid grey;
+    text-align: center;
+    font-size: 1rem;
+    box-shadow: 2px 0 2px;
+  }
+  
