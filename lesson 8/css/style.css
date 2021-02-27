@@ -1,0 +1,14 @@
+h1 {
+font: ubunto, san serif;
+}
+
+thead {color:green;}
+tbody {color:blue;}
+tfoot {color:red;}
+
+table, th, td {
+  border: 1px solid red;
+  text-align: center;
+  font-size: 5rem;
+}
+
