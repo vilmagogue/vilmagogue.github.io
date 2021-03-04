@@ -6,7 +6,7 @@ html{-webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%;
 body {
     font-size: 16px;
     font-family: 'Fraunces', serif;
-    background-color:#0077B6;
+    background-color:#CAF0F8;
     padding: 0;
 	margin: 0;
   }
@@ -49,7 +49,7 @@ header img {
 	font-size: .9rem;
 }
 
-  .headings1 {
+  .headings {
     font-size: 1.2rem;
   }
 
@@ -105,58 +105,3 @@ footer{
     color:#CAF0F8;
     font-size: 1em;
 } 
-
-  img {
-    filter: blur(0rem);
-    transition: filter 0.5s;
-  } 
-
-main{
-    
-    text-align: center;
-}
-
-main h2{
-    font-size: 3rem;
-
-}
-img[data-src] {
-    filter: blur(0.5rem);
-  }
-  
-
-figure:nth-child(n){
-    margin: 15px;
-}
-
-figure:hover:nth-child(n){
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 2);
-    transform: scale(1.05);
-}
-
-
-figcaption{
-    font-size: .8em;
-}
-
-/*----- Clearfix: Force an Element not to collapse -----*/
-.clearfix:after {
-    content: "";
-    display: table;
-    clear: both;
-  }
-  div.figContainer {
-    margin: 1rem auto; 
-      display:grid; 
-      grid-template-columns: 1fr 1fr 1fr; 
-      max-width: 1200;
-    }
-
-  picture { width: 300px; 
-    height: auto 200; 
-    margin: .5rem;
-}
-  figcaption {font-size: smaller;}
-  /* hover effect */
-  .norm:hover {box-shadow: 0 0 50px #333;
-}
