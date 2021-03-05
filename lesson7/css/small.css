@@ -6,7 +6,7 @@ html{-webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%;
 body {
     font-size: 16px;
     font-family: 'Fraunces', serif;
-    background-color:#0077B6;
+    background-color:white;
     padding: 0;
 	margin: 0;
   }
@@ -130,7 +130,7 @@ figure:nth-child(n){
 }
 
 figure:hover:nth-child(n){
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 2);
+    box-shadow: 4px 4px 4px 4px rgba(0, 0, 0, 2);
     transform: scale(1.05);
 }
 
@@ -158,5 +158,5 @@ figcaption{
 }
   figcaption {font-size: smaller;}
   /* hover effect */
-  .norm:hover {box-shadow: 0 0 50px #333;
+  .norm:hover {box-shadow: 0 0 50px  #333;
 }

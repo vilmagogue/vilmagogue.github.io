@@ -5,24 +5,20 @@ function preloadImage(img) {
   if (!src) {
     return;
   }
-  let options = {
-    root: document.querySelector('#scrollArea'),
-    rootMargin: '0px',
-    threshold: 1.0
-  }
-  
-  let observer = new IntersectionObserver(callback, options);
+
   img.src = src;
-  img.removeAttribute('data-src');
+  img.removeAttribute("data-src");
 }
 
+//will start loading .img file when it is 300px below the viewport)
 const imgOptions = {
-  threshold: 1,
-  rootMargin: "0px 0px 10px 0px",
+  threshold: 0,
+  rootMargin: "0px 0px 300px 0px",
 };
 
+//loop through the images and determine which ones need to be shown
 const imgObserver = new IntersectionObserver((entries, imgObserver) => {
-  entries.forEach(entry => {
+  entries.forEach((entry) => {
     if (!entry.isIntersecting) {
       return;
     } else {
@@ -32,7 +28,6 @@ const imgObserver = new IntersectionObserver((entries, imgObserver) => {
   });
 }, imgOptions);
 
-images.forEach(image => {
+images.forEach((image) => {
   imgObserver.observe(image);
 });
-
