@@ -21,9 +21,8 @@ image.setAttribute('src', prophets[i].imageurl);
 image.setAttribute("alt", prophets[i].name + "" + prophets[i]. lastname + "" + "-" + "")
 
 
-document.querySelector('div.cards').appendChild(card);
-h2.textContent = prophets[i].name + ' ' + prophets[i].lastname;
-
+card.appendChild(h2);
+card.appendChild(h2);
 card.appendChild(h2);
 card.appendChild(h2);
 

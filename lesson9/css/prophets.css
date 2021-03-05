@@ -30,6 +30,7 @@ p{
 img{
     width: 80%;
     padding: 5%;
+    box-shadow: 5px 5px 5px #777;
 }
 section{
    background-color: white;
