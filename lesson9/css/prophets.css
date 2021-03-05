@@ -1,7 +1,7 @@
 
 body {
     font-family: 'Fraunces', serif;
-    font-size: 16px;
+    font-size: 15px;
    color: white;
     text-align: center; 
     background-color: #03045E;
@@ -20,6 +20,7 @@ h2{
     font-size: 1.5rem;
     font-family: 'Fraunces', serif;
      margin-top: 7px;
+     color: #03045E;
 }
 p{
     font-size: 1rem;
@@ -32,6 +33,8 @@ img{
 }
 section{
    background-color: white;
+   margin: 1 0 1rem 0;
+   box-shadow: 10px 10px 10px 0 rgba (0,0,0,0.5)
 }
 @media only screen and (min-width: 35rem){
   .cards{
@@ -39,7 +42,7 @@ section{
       grid-template-columns: 1fr 1fr;
       grid-gap: 20px;
   }
-.div.cards{
+div.cards{
     margin: auto;
 }
 }
@@ -50,7 +53,7 @@ section{
         grid-template-columns: 1fr 1fr 1fr 1fr;
         grid-gap: 20px;
     }
-  .div.cards{
+  div.cards{
       margin: auto;
   }
   }

@@ -11,7 +11,7 @@ let card = document.createElement('section');
 let h2 = document.createElement('h2');
 let cardP1 = document.createElement('p');
 let cardP2= document.createElement('p');
-let card= document.createElement('p');
+
 let image = document.createElement('img');
 
 h2.textContent = prophets[i].name + ' ' + prophets[i].lastname;
