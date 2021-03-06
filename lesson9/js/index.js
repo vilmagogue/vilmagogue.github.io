@@ -19,7 +19,7 @@ townP.textContent ="currentPopulation:" + "" + prophets[i].birthplace;
 townP.textContent ="averageRainfall:" + "" + prophets[i].birthplace;
 townP.textContent ="Events:" + "" + prophets[i].birthplace;
 
-image.setAttribute("alt", prophets[i].name + "" + prophets[i]. lastname + "" + "-" + "")
+image.setAttribute("alt", towns[i].name +  "" + "-" + "")
 
 document.querySelector('div.cards').appendChild(card);
 
