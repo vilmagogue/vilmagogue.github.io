@@ -4,28 +4,34 @@ fetch(requestURL)
     return response.json();
   })
   .then(function (jsonObject) {
-    const prophets = jsonObject['prophets'];
-    for (let i = 0; i < prophets.length; i++ ) {
+    //console.table//
+        const prophets = jsonObject['prophets'];
+//output//
+        const cards = document.querrySelector('.cards')
+        prophets.forEach(prophet =>{
+
+        
+
 
 let card = document.createElement('section');
 let h2 = document.createElement('h2');
 let p = document.createElement('p');
-let img= document.createElement('img');
+let image = document.createElement('img');
 
-h2.textContent = prophets[i].name + ' ' + prophets[i].lastname;
-p.textContent ="birthDate:" + "" + prophets[i].birthdate;
+h2.textContent = '${prophets.name}  ${prophets.lastname}';
+p.textContent = '${prophets.birthdate} ${prophet.birthplace}';
 p.textContent ="birthPlace:" + "" + prophets[i].birthPlace;
-img.setAttribute('src', prophets[i].imageurl);
-img.setAttribute("alt", prophets[i].name + "" + prophets[i]. lastname + "" + "-" + "" + prophets[i].order);
+image.setAttribute('src', '${prophets.imageurl}');
+
 
 
 card.append(h2);
-card. appendChild(bday);
-card.appendChild(bPlace);
-card.append(image);
+card. appendChild(p);
+card.appendChild(image);
+card.append(card);
 
-document.querySelector('div.cards').appendChild(card);
 
-    }
+
+    });
 }); 
 
