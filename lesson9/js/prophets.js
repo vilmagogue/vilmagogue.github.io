@@ -9,15 +9,14 @@ fetch(requestURL)
 
 let card = document.createElement('section');
 let h2 = document.createElement('h2');
-let bDay = document.createElement('p');
-let bPlace = document.createElement('p');
-let image= document.createElement('img');
+let p = document.createElement('p');
+let img= document.createElement('img');
 
 h2.textContent = prophets[i].name + ' ' + prophets[i].lastname;
-bDay.textContent ="Born:" + "" + prophets[i].birthdate;
-bPlace.textContent ="Born:" + "" + prophets[i].birthdate;
-image.setAttribute('src', prophets[i].imageurl);
-image.setAttribute("alt", prophets[i].name + "" + prophets[i]. lastname + "" + "-" + "" + prophets[i].order);
+p.textContent ="birthDate:" + "" + prophets[i].birthdate;
+p.textContent ="birthPlace:" + "" + prophets[i].birthPlace;
+img.setAttribute('src', prophets[i].imageurl);
+img.setAttribute("alt", prophets[i].name + "" + prophets[i]. lastname + "" + "-" + "" + prophets[i].order);
 
 
 card.append(h2);

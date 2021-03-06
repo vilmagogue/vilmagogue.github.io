@@ -25,3 +25,17 @@ document.querySelector('div.cards').appendChild(card);
 
     }
 }); 
+
+<section>
+    <h2>Soda Springs</h2>
+    <p>Motto : Historic Oregon Trail Oasis. The soda is on Us</p>
+    <p>Year Founded : 1858</p>
+    <p>Current Population : 2985</p>
+    <p>Average Rainfall : 15.75</p>
+    <p>Events : February 29 : Geyser Song Day </p>
+    <p>May 1 - 6 : Days of May Celebration</p>
+    <p>October 15 -16 : OctoberFest</p>
+    <img src="images/sodaSprings.jpeg" alt="Soda Springs -2">
+
+</section>
+
