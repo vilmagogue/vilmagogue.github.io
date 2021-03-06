@@ -13,13 +13,13 @@ let townP = document.createElement('p');
 let image = document.createElement('img');
 
 h2.textContent = towns[i].name + ' ' + towns[i].lastname;
-townP.textContent ="motto:" + "" + prophets[i].birthdate;
-townP.textContent ="yearFounded:" + "" + prophets[i].birthplace;
-townP.textContent ="currentPopulation:" + "" + prophets[i].birthplace;
-townP.textContent ="averageRainfall:" + "" + prophets[i].birthplace;
-townP.textContent ="Events:" + "" + prophets[i].birthplace;
+townP.textContent ="motto:" + "" + towns[i].motto;
+townP.textContent ="yearFounded:" + "" + towns[i].yearFounded;
+townP.textContent ="currentPopulation:" + "" + towns[i].currentPopulation;
+townP.textContent ="averageRainfall:" + "" + towns[i].averageRainfall;
+townP.textContent ="Events:" + "" + towns[i].events;
 
-image.setAttribute("alt", towns[i].name +  "" + "-" + "")
+image.setAttribute("alt", towns[i].name +  "")
 
 document.querySelector('div.cards').appendChild(card);
 
