@@ -145,27 +145,29 @@ footer{
     
 h2 {text-align:center;}
 
+
 section {
-	max-width: 600px;
-  margin: .5rem auto;
+    max-width: 960px;
+    margin: .5rem auto;
 	border:1px solid #bbb;
-  background-color: #eee;
+    background-color: #eee;
 }
 
-article {
-  display: grid;
-	grid-template-columns: 1fr 1fr;
+p {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    color: #03045E;
 }
 
-article:nth-child(odd) img {
+p:nth-child(odd) img {
 	grid-column: 2;
 }
 
-article:nth-child(odd) .data {
+p:nth-child(odd) .data {
 	grid-column: 1;
 	grid-row: 1;
 }
 
 img {width: 100%; height: auto;padding:0;}
-.data {background-color:#000; color:#fff;}
+.data {background-color:#000; color:#03045E;}
 p {padding: .75rem;}
