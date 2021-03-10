@@ -2,9 +2,9 @@
 body {
     font-family: 'Fraunces', serif;
     font-size: 15px;
-   color: white;
+   color: navy blue;
     text-align: center; 
-    background-color: #03045E;
+    background-color: white;
 }
 div.cards{
     margin-left: auto;

@@ -4,6 +4,7 @@ fetch(requestURL)
     return response.json();
   })
   .then(function (jsonObject) {
+    const prophets = jsonobject['prophets'];
     //test if the array of prophets will show using console.log//
   
     //set output location//
@@ -30,7 +31,7 @@ let pImg = document.createElement('Img');
     pImg.style.width='200px';
     
     
-    card.append(h2);
+    cards.append(h2);
     utah.append(card);
     Img.append(pImg)
      });
