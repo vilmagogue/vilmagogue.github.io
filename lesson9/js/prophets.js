@@ -4,14 +4,14 @@ fetch(requestURL)
     return response.json();
   })
   .then(function (jsonObject) {
-    const prophets = jsonobject['prophets'];
+    const prophets = jsonObject['prophets'];
     //test if the array of prophets will show using console.log//
   
     //set output location//
 
     const cards = document.querySelector(".cards");
 
-prophets.forEach(prophet => {
+prophets.forEach(prophet => {prophet = {name: "Joseph", lastname: 'Smith', birthplace: 'Utah'}
 
 });
      const utah = jdocument.querSelector('.utah');
@@ -26,14 +26,14 @@ let pImg = document.createElement('Img');
     //use template literals//
     h2.textContent ='${utahprophet.name} ${utahprophet.lastname}';
     pImg.setAttribute('src', utahprophet.imageURL);
-    pImg.setAttribute('alt', 'Images of ${prophet.name} who was born in ${utahprophet.birthplace} in the year ${prophet.birthdate.substring(propet.birthpdate.lenght-4)}!')
+    pImg.setAttribute('alt', 'Images of ${utahprophet.name} who was born in ${utahprophet.birthplace} in the year ${utahprophet.birthdate.substring(utahprophet.birthpdate.lenght-4)}!')
     pImg.style.boxshadow ='0 0 30px #777';
     pImg.style.width='200px';
     
     
-    cards.append(h2);
+    card.append(h2);
     utah.append(card);
-    Img.append(pImg)
+    card.append(pImg)
      });
 
 
