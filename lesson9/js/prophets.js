@@ -32,7 +32,7 @@ let pImg = document.createElement('Img');
     
     
     card.append(h2);
-    utah.append(card);
+    utah.append(cards);
     card.append(pImg)
      });
 
