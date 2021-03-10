@@ -15,9 +15,13 @@ fetch(requestURL)
     //create section/memory in js; not on HTML page//
 let card = document.createElement('section');
 let h2 = document.createElement('h2');
+let pImg = document.createElement('Img');
+
+
     //use template literals//
-    h2.innerHTML.html ="${prophet.name}<span style='color:white'> ${prophet.lastname}</span>";
-    
+    h2.innerHTML ="${prophet.name} <span style='color:white'> ${prophet.lastname}</span>";
+    pImg.setAttribute("src", prophet.imageURL);
+    pImg.setAttribute("alt", 'Images of ${prophet.name} who was born in ${prophet.birthplace} in the year ${prophet.birthdate}!')
     card.append(h2);
     cards.append(card);
 
