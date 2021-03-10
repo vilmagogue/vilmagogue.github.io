@@ -10,22 +10,32 @@ fetch(requestURL)
 
     const cards = document.querySelector(".cards");
 
-     const prophets = jsonObject['prophets'];
-     prophets.forEach(prophet=> {
-    //create section/memory in js; not on HTML page//
+prophets.forEach(prophet => {
+
+});
+     const utah = jdocument.querSelector('.utah');
+     const utahfilter = prophets.filter(x => x.birthplace == 'Utah');
+//create section in js file not at HTML file//
+   utahfilter.forEach(utahprophet => {
 let card = document.createElement('section');
 let h2 = document.createElement('h2');
 let pImg = document.createElement('Img');
 
 
     //use template literals//
-    h2.innerHTML ="${prophet.name} <span style='color:white'> ${prophet.lastname}</span>";
-    pImg.setAttribute("src", prophet.imageURL);
-    pImg.setAttribute("alt", 'Images of ${prophet.name} who was born in ${prophet.birthplace} in the year ${prophet.birthdate}!')
+    h2.textContent ='${utahprophet.name} ${utahprophet.lastname}';
+    pImg.setAttribute('src', utahprophet.imageURL);
+    pImg.setAttribute('alt', 'Images of ${prophet.name} who was born in ${utahprophet.birthplace} in the year ${prophet.birthdate.substring(propet.birthpdate.lenght-4)}!')
+    pImg.style.boxshadow ='0 0 30px #777';
+    pImg.style.width='200px';
+    
+    
     card.append(h2);
-    cards.append(card);
-
+    utah.append(card);
+    Img.append(pImg)
      });
+
+
     });
         
         
