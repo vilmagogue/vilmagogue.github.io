@@ -4,34 +4,24 @@ fetch(requestURL)
     return response.json();
   })
   .then(function (jsonObject) {
-    //console.table//
-        const prophets = jsonObject['prophets'];
-//output//
-        const cards = document.querrySelector('.cards')
-        prophets.forEach(prophet =>{
+    //test if the array of prophets will show using console.log//
+  
+    //set output location//
 
-        
+    const cards = document.querySelector(".cards");
 
-
+     const prophets = jsonObject['prophets'];
+     prophets.forEach(prophet=> {
+    //create section/memory in js; not on HTML page//
 let card = document.createElement('section');
 let h2 = document.createElement('h2');
-let p = document.createElement('p');
-let image = document.createElement('img');
+    //use template literals//
+    h2.innerHTML.html ="${prophet.name}<span style='color:white'> ${prophet.lastname}</span>";
+    
+    card.append(h2);
+    cards.append(card);
 
-h2.textContent = '${prophets.name}  ${prophets.lastname}';
-p.textContent = '${prophets.birthdate} ${prophet.birthplace}';
-p.textContent ="birthPlace:" + "" + prophets[i].birthPlace;
-image.setAttribute('src', '${prophets.imageurl}');
-
-
-
-card.append(h2);
-card. appendChild(p);
-card.appendChild(image);
-card.append(card);
-
-
-
+     });
     });
-}); 
-
+        
+        
