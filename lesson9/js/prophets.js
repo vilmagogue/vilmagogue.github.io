@@ -24,9 +24,9 @@ let pImg = document.createElement('Img');
 
 
     //use template literals//
-    h2.textContent ='${utahprophet.name} ${utahprophet.lastname}';
+    h2.innerHTML ='${utahprophet.name} ${utahprophet.lastname}';
     pImg.setAttribute('src', utahprophet.imageURL);
-    pImg.setAttribute('alt', 'Images of ${utahprophet.name} who was born in ${utahprophet.birthplace} in the year ${utahprophet.birthdate.substring(utahprophet.birthpdate.lenght-4)}!')
+    pImg.setAttribute('alt', 'Portrait of ${utahprophet.name} who was born in ${utahprophet.birthplace} in the year ${utahprophet.birthdate.substring(utahprophet.birthpdate.lenght-4)}!')
     pImg.style.boxshadow ='0 0 30px #777';
     pImg.style.width='200px';
     
