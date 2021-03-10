@@ -14,7 +14,7 @@ fetch(requestURL)
 prophets.forEach(prophet => {prophet = {name: "Joseph", lastname: 'Smith', birthplace: 'Utah'}
 
 });
-     const utah = jdocument.querSelector('.utah');
+     const utah = document.querySelector('.utah');
      const utahfilter = prophets.filter(x => x.birthplace == 'Utah');
 //create section in js file not at HTML file//
    utahfilter.forEach(utahprophet => {
