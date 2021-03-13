@@ -21,8 +21,8 @@ fetch(requestURL)
 
     // set output string, set all attributes declared from HTML/card //
 h2.textContent = prophets[i].name + " " + prophets[i].lastname;
-birthday.textContent = "Date of Birth :" + " " + prophets[i].lastname;
-birthPlace.textContent ="Place of Birth :" + " " + prophets[i].birthPlace;
+birthday.textContent = "Date of Birth :" + " " + prophets[i].birthdate;
+birthPlace.textContent ="Place of Birth :" + " " + prophets[i].birthplace;
 prophetPhoto.setAttribute("src", prophets[i].imageurl);
 prophetPhoto.setAttribute("alt", prophets[i].name + " " + prophets[i].lastname + " " + "");
 prophetPhoto.style.width="200px";
