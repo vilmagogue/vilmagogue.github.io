@@ -6,7 +6,7 @@ html{-webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%;
 body {
     font-size: 16px;
     font-family: 'Fraunces', serif;
-    background-color:white;
+    background-color:#03045E;
     padding: 0;
 	margin: 0;
   }
@@ -105,3 +105,8 @@ footer{
     color:#CAF0F8;
     font-size: 1em;
 } 
+
+div.wireframe{
+    display: grid;
+    grid-template-column: 1fr;
+}
