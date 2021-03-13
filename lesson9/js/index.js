@@ -31,17 +31,17 @@ h2.textContent = town[i].name + " " + towns[i].name;
 motto.textContent = "motto :" + " " + towns[i].motto;
 yearFounded.textContent ="yearFounded :" + " " + towns[i].yearFounded;
 currentPopulation = "currentPopulation :" + " " + towns[i].currentPopulation;
-averageRainfall = "averageRainfall :" + " " + towns[i].averageRainfall;
+annualRainfall = "averageRainfall :" + " " + towns[i].averageRainfall;
 
 
 townPhoto.setAttribute('src' , `images/${town.photo}`);
             townPhoto.setAttribute("alt", `town ${town.name} photo`);
             townPhoto.setAttribute("loading", "lazy")
-            townPhoto.style.boxShadow = '0 0 30px #333';
+            townPhoto.style.boxShadow = "2px 2px 2px #777";
             townPhoto.style.width = '200px';
 
 card.append(h2);
-card.appendChild(name);
+card.appendChild(town);
 card.appendChild(motto);
 card.append(yearFounded);
 card.append(currentPopulation);
