@@ -12,6 +12,12 @@ fetch(requestURL)
     const cards = document.querySelector(".cards");
 
 prophets.forEach(prophet => {prophet = {name: "Joseph", lastname: 'Smith', birthplace: 'Utah'}
+let card = document.createElement('section');
+let h2 =document.createElement('h2');
+//use template literals//
+h2.innerHTML = '${prophet.name}'; 
+card.append(h2);
+cards.append(card);
 
 });
      const utah = document.querySelector('.utah');
@@ -24,7 +30,7 @@ let pImg = document.createElement('Img');
 
 
     //use template literals//
-    h2.innerHTML ='${utahprophet.name} ${utahprophet.lastname}';
+    h2.textContent ='${utahprophet.name} ${utahprophet.lastname}';
     pImg.setAttribute('src', utahprophet.imageURL);
     pImg.setAttribute('alt', 'Portrait of ${utahprophet.name} who was born in ${utahprophet.birthplace} in the year ${utahprophet.birthdate.substring(utahprophet.birthpdate.lenght-4)}!')
     pImg.style.boxshadow ='0 0 30px #777';
@@ -37,6 +43,6 @@ let pImg = document.createElement('Img');
      });
 
 
-    });
+  });
         
         
